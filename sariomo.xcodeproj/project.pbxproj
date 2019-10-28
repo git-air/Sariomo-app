@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14ED345A70C74846E8AF3F78 /* Pods_sariomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */; };
 		4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6012364E0AB00A6D11F /* SariomoColor.swift */; };
 		4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6052364E94000A6D11F /* TabBarViewController.swift */; };
 		4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED22364CB98006E89EB /* AppDelegate.swift */; };
@@ -22,6 +23,9 @@
 		4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF062364DBF5006E89EB /* Tanka.storyboard */; };
 		4534AF092364DC12006E89EB /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF082364DC12006E89EB /* Notification.storyboard */; };
 		4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF0A2364DC59006E89EB /* MyPage.storyboard */; };
+		455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E2E742366BAB900E4C7F8 /* TankaViewController.swift */; };
+		95BACD0A3077FA41A7E1E9B8 /* Pods_sariomo_sariomoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */; };
+		BEFA332D6232DE9F6D64D3D6 /* Pods_sariomoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD628C881DDA7C53E0F6172 /* Pods_sariomoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomo_sariomoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6D98404C983381CFD1971D /* Pods-sariomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomoTests.release.xcconfig"; path = "Target Support Files/Pods-sariomoTests/Pods-sariomoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4508C6012364E0AB00A6D11F /* SariomoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SariomoColor.swift; sourceTree = "<group>"; };
 		4508C6052364E94000A6D11F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4534AECF2364CB98006E89EB /* sariomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sariomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +69,14 @@
 		4534AF062364DBF5006E89EB /* Tanka.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tanka.storyboard; sourceTree = "<group>"; };
 		4534AF082364DC12006E89EB /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		4534AF0A2364DC59006E89EB /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
+		5A8027A03EEA73BB4CA06878 /* Pods-sariomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo.debug.xcconfig"; path = "Target Support Files/Pods-sariomo/Pods-sariomo.debug.xcconfig"; sourceTree = "<group>"; };
+		67255A3B0235D881D64DC8C7 /* Pods-sariomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomoTests.debug.xcconfig"; path = "Target Support Files/Pods-sariomoTests/Pods-sariomoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811DD8B023DA68B266B88B98 /* Pods-sariomo-sariomoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo-sariomoUITests.debug.xcconfig"; path = "Target Support Files/Pods-sariomo-sariomoUITests/Pods-sariomo-sariomoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A693943B816CF4CAD3D68D85 /* Pods-sariomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo.release.xcconfig"; path = "Target Support Files/Pods-sariomo/Pods-sariomo.release.xcconfig"; sourceTree = "<group>"; };
+		D87A13B6B392191A841C0000 /* Pods-sariomo-sariomoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo-sariomoUITests.release.xcconfig"; path = "Target Support Files/Pods-sariomo-sariomoUITests/Pods-sariomo-sariomoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FBD628C881DDA7C53E0F6172 /* Pods_sariomoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ED345A70C74846E8AF3F78 /* Pods_sariomo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFA332D6232DE9F6D64D3D6 /* Pods_sariomoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BACD0A3077FA41A7E1E9B8 /* Pods_sariomo_sariomoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +114,8 @@
 				4534AEE82364CB99006E89EB /* sariomoTests */,
 				4534AEF32364CB99006E89EB /* sariomoUITests */,
 				4534AED02364CB98006E89EB /* Products */,
+				4F04C0B873938A2D1BE61F5A /* Pods */,
+				AE8E17A9AEDA7AF5C6BCC31D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +132,7 @@
 		4534AED12364CB98006E89EB /* sariomo */ = {
 			isa = PBXGroup;
 			children = (
+				455E2E742366BAB900E4C7F8 /* TankaViewController.swift */,
 				4534AF0C2364DC6B006E89EB /* Storyboard */,
 				4534AED22364CB98006E89EB /* AppDelegate.swift */,
 				4534AED42364CB98006E89EB /* SceneDelegate.swift */,
@@ -157,6 +177,29 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		4F04C0B873938A2D1BE61F5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A8027A03EEA73BB4CA06878 /* Pods-sariomo.debug.xcconfig */,
+				A693943B816CF4CAD3D68D85 /* Pods-sariomo.release.xcconfig */,
+				811DD8B023DA68B266B88B98 /* Pods-sariomo-sariomoUITests.debug.xcconfig */,
+				D87A13B6B392191A841C0000 /* Pods-sariomo-sariomoUITests.release.xcconfig */,
+				67255A3B0235D881D64DC8C7 /* Pods-sariomoTests.debug.xcconfig */,
+				3F6D98404C983381CFD1971D /* Pods-sariomoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE8E17A9AEDA7AF5C6BCC31D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */,
+				223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */,
+				FBD628C881DDA7C53E0F6172 /* Pods_sariomoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4534AEF92364CB9A006E89EB /* Build configuration list for PBXNativeTarget "sariomo" */;
 			buildPhases = (
+				9F690396C5086248685E8E31 /* [CP] Check Pods Manifest.lock */,
 				4534AECB2364CB98006E89EB /* Sources */,
 				4534AECC2364CB98006E89EB /* Frameworks */,
 				4534AECD2364CB98006E89EB /* Resources */,
+				F7E1D659C2C4A8FFC3E863C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4534AEFC2364CB9A006E89EB /* Build configuration list for PBXNativeTarget "sariomoTests" */;
 			buildPhases = (
+				85AFB026B85BBBC291E3FEA5 /* [CP] Check Pods Manifest.lock */,
 				4534AEE12364CB99006E89EB /* Sources */,
 				4534AEE22364CB99006E89EB /* Frameworks */,
 				4534AEE32364CB99006E89EB /* Resources */,
@@ -199,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4534AEFF2364CB9A006E89EB /* Build configuration list for PBXNativeTarget "sariomoUITests" */;
 			buildPhases = (
+				187316CA8057BA7761CE130E /* [CP] Check Pods Manifest.lock */,
 				4534AEEC2364CB99006E89EB /* Sources */,
 				4534AEED2364CB99006E89EB /* Frameworks */,
 				4534AEEE2364CB99006E89EB /* Resources */,
+				6DA1BA935C60EE9AE2784B89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +336,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		187316CA8057BA7761CE130E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sariomo-sariomoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA1BA935C60EE9AE2784B89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sariomo-sariomoUITests/Pods-sariomo-sariomoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sariomo-sariomoUITests/Pods-sariomo-sariomoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sariomo-sariomoUITests/Pods-sariomo-sariomoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85AFB026B85BBBC291E3FEA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sariomoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F690396C5086248685E8E31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sariomo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E1D659C2C4A8FFC3E863C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sariomo/Pods-sariomo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sariomo/Pods-sariomo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sariomo/Pods-sariomo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4534AECB2364CB98006E89EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -295,6 +446,7 @@
 			files = (
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
+				455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */,
 				4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */,
 				4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */,
 				4534AED52364CB98006E89EB /* SceneDelegate.swift in Sources */,
@@ -468,6 +620,7 @@
 		};
 		4534AEFA2364CB9A006E89EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8027A03EEA73BB4CA06878 /* Pods-sariomo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +640,7 @@
 		};
 		4534AEFB2364CB9A006E89EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A693943B816CF4CAD3D68D85 /* Pods-sariomo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +660,7 @@
 		};
 		4534AEFD2364CB9A006E89EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67255A3B0235D881D64DC8C7 /* Pods-sariomoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +683,7 @@
 		};
 		4534AEFE2364CB9A006E89EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6D98404C983381CFD1971D /* Pods-sariomoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +706,7 @@
 		};
 		4534AF002364CB9A006E89EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811DD8B023DA68B266B88B98 /* Pods-sariomo-sariomoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +727,7 @@
 		};
 		4534AF012364CB9A006E89EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87A13B6B392191A841C0000 /* Pods-sariomo-sariomoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
