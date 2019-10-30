@@ -17,13 +17,28 @@ class HomeViewController: TabmanViewController {
         
         self.dataSource = self
         
+        typealias BarType = TMBarView<TMHorizontalBarLayout, TMLabelBarButton, TMBarIndicator.None>
+        
         // Create bar
         let bar = TMBar.ButtonBar()
-        bar.layout.transitionStyle = .none // Customize
+        
+        bar.layout.contentMode = .fit
+        
+        // Zeplinバージョン
+        // bar.layout.alignment = .center
+        
+        bar.layout.separatorColor = MyColor.tomato
+        bar.indicator.tintColor = MyColor.tomato
+        
+        
         bar.buttons.customize { (button) in
             button.selectedTintColor = MyColor.tomato
+            button.tintColor = .gray
         }
         
+        bar.backgroundView.style = .flat(color: .white)
+        
+
         // Add to view
         addBar(bar, dataSource: self, at: .top)
         
