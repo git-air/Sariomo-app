@@ -1,20 +1,32 @@
 PODS:
   - Alamofire (4.9.1)
+  - AutoInsetter (1.8.0)
+  - Pageboy (3.5.0)
   - SwiftyJSON (5.0.0)
+  - Tabman (2.6.3):
+    - AutoInsetter (~> 1.8.0)
+    - Pageboy (~> 3.5.0)
 
 DEPENDENCIES:
   - Alamofire (< 5.0)
   - SwiftyJSON
+  - Tabman
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AutoInsetter
+    - Pageboy
     - SwiftyJSON
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AutoInsetter: 0b90ca74e36561c340129045a3722c51a0b15c58
+  Pageboy: 3794c578aae5fcce06e90b3ed4a0ad6b807d75bb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Tabman: 63eae331ae7a9388ae389b1808f1939269fcdece
 
-PODFILE CHECKSUM: 03bf2ad086ba2bb26140bdf5fd5e021f5906fdf2
+PODFILE CHECKSUM: a0c4422b3e53654387a39ed3585bfe06700cbdc6
 
 COCOAPODS: 1.8.3

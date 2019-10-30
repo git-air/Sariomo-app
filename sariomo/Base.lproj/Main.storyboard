@@ -7,11 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home -->
         <scene sceneID="ihP-3B-Mpa">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="L6B-t2-ttQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder id="L6B-t2-ttQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OzB-H3-e5B"/>
+                    <string key="storyboardName" base64-UTF8="YES">
+SG9tZQg
+</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oh9-k1-7Ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
