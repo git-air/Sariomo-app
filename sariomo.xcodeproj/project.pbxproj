@@ -18,14 +18,13 @@
 		4534AEDF2364CB99006E89EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AEDD2364CB99006E89EB /* LaunchScreen.storyboard */; };
 		4534AEEA2364CB99006E89EB /* sariomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AEE92364CB99006E89EB /* sariomoTests.swift */; };
 		4534AEF52364CB99006E89EB /* sariomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AEF42364CB99006E89EB /* sariomoUITests.swift */; };
-		4534AF032364DB63006E89EB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF022364DB63006E89EB /* Home.storyboard */; };
 		4534AF052364DBCE006E89EB /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF042364DBCE006E89EB /* Search.storyboard */; };
 		4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF062364DBF5006E89EB /* Tanka.storyboard */; };
 		4534AF092364DC12006E89EB /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF082364DC12006E89EB /* Notification.storyboard */; };
 		4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF0A2364DC59006E89EB /* MyPage.storyboard */; };
 		455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E2E742366BAB900E4C7F8 /* TankaViewController.swift */; };
 		458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F3236945DA00A0497C /* HomeViewController.swift */; };
-		458FD1F6236947A600A0497C /* PagingMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F5236947A600A0497C /* PagingMenuViewController.swift */; };
+		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
 		95BACD0A3077FA41A7E1E9B8 /* Pods_sariomo_sariomoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */; };
 		BEFA332D6232DE9F6D64D3D6 /* Pods_sariomoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD628C881DDA7C53E0F6172 /* Pods_sariomoTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,14 +65,13 @@
 		4534AEF02364CB99006E89EB /* sariomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sariomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534AEF42364CB99006E89EB /* sariomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sariomoUITests.swift; sourceTree = "<group>"; };
 		4534AEF62364CB99006E89EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4534AF022364DB63006E89EB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Home\b.storyboard"; sourceTree = "<group>"; };
 		4534AF042364DBCE006E89EB /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		4534AF062364DBF5006E89EB /* Tanka.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tanka.storyboard; sourceTree = "<group>"; };
 		4534AF082364DC12006E89EB /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		4534AF0A2364DC59006E89EB /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
 		458FD1F3236945DA00A0497C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		458FD1F5236947A600A0497C /* PagingMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingMenuViewController.swift; sourceTree = "<group>"; };
+		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		5A8027A03EEA73BB4CA06878 /* Pods-sariomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo.debug.xcconfig"; path = "Target Support Files/Pods-sariomo/Pods-sariomo.debug.xcconfig"; sourceTree = "<group>"; };
 		67255A3B0235D881D64DC8C7 /* Pods-sariomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomoTests.debug.xcconfig"; path = "Target Support Files/Pods-sariomoTests/Pods-sariomoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +134,7 @@
 		4534AED12364CB98006E89EB /* sariomo */ = {
 			isa = PBXGroup;
 			children = (
+				458FD1F3236945DA00A0497C /* HomeViewController.swift */,
 				455E2E742366BAB900E4C7F8 /* TankaViewController.swift */,
 				4534AF0C2364DC6B006E89EB /* Storyboard */,
 				4534AED22364CB98006E89EB /* AppDelegate.swift */,
@@ -147,8 +146,6 @@
 				4534AEE02364CB99006E89EB /* Info.plist */,
 				4508C6012364E0AB00A6D11F /* SariomoColor.swift */,
 				4508C6052364E94000A6D11F /* TabBarViewController.swift */,
-				458FD1F3236945DA00A0497C /* HomeViewController.swift */,
-				458FD1F5236947A600A0497C /* PagingMenuViewController.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -174,7 +171,7 @@
 		4534AF0C2364DC6B006E89EB /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				4534AF022364DB63006E89EB /* Home.storyboard */,
+				45DBBA552369887800EDC8D5 /* Home.storyboard */,
 				4534AF042364DBCE006E89EB /* Search.storyboard */,
 				4534AF062364DBF5006E89EB /* Tanka.storyboard */,
 				4534AF082364DC12006E89EB /* Notification.storyboard */,
@@ -317,12 +314,12 @@
 			files = (
 				4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */,
 				4534AEDF2364CB99006E89EB /* LaunchScreen.storyboard in Resources */,
-				4534AF032364DB63006E89EB /* Home.storyboard in Resources */,
 				4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */,
 				4534AEDC2364CB99006E89EB /* Assets.xcassets in Resources */,
 				4534AEDA2364CB98006E89EB /* Main.storyboard in Resources */,
 				4534AF052364DBCE006E89EB /* Search.storyboard in Resources */,
 				4534AF092364DC12006E89EB /* Notification.storyboard in Resources */,
+				45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +450,6 @@
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
 				455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */,
-				458FD1F6236947A600A0497C /* PagingMenuViewController.swift in Sources */,
 				4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */,
 				4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */,
 				458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */,
@@ -634,7 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T59TQJ3KS;
 				INFOPLIST_FILE = sariomo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,7 +650,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T59TQJ3KS;
 				INFOPLIST_FILE = sariomo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
