@@ -38,6 +38,10 @@ class TankaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func postTap(_ sender: Any) {
         phrase1 = phrase1TextField.text!
         phrase2 = phrase2TextField.text!
@@ -54,7 +58,6 @@ class TankaViewController: UIViewController {
         ]
         
         postRequest(parameters: parametars)
-        
     }
     
     func postRequest(parameters: [String: Any]) {
