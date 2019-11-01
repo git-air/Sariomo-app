@@ -33,7 +33,7 @@ class HomeViewController: TabmanViewController {
         
         bar.buttons.customize { (button) in
             button.selectedTintColor = MyColor.tomato
-            button.tintColor = .gray
+            button.tintColor = .darkGray
         }
         
         bar.backgroundView.style = .flat(color: .white)
