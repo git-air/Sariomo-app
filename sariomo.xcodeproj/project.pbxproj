@@ -10,6 +10,8 @@
 		14ED345A70C74846E8AF3F78 /* Pods_sariomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */; };
 		4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6012364E0AB00A6D11F /* SariomoColor.swift */; };
 		4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6052364E94000A6D11F /* TabBarViewController.swift */; };
+		451B445C236C126F0086666A /* TestXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B445B236C126F0086666A /* TestXibView.swift */; };
+		451B445E236C12850086666A /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451B445D236C12850086666A /* TestXibView.xib */; };
 		4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED22364CB98006E89EB /* AppDelegate.swift */; };
 		4534AED52364CB98006E89EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED42364CB98006E89EB /* SceneDelegate.swift */; };
 		4534AED72364CB98006E89EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED62364CB98006E89EB /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		3F6D98404C983381CFD1971D /* Pods-sariomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomoTests.release.xcconfig"; path = "Target Support Files/Pods-sariomoTests/Pods-sariomoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4508C6012364E0AB00A6D11F /* SariomoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SariomoColor.swift; sourceTree = "<group>"; };
 		4508C6052364E94000A6D11F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		451B445B236C126F0086666A /* TestXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibView.swift; sourceTree = "<group>"; };
+		451B445D236C12850086666A /* TestXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
 		4534AECF2364CB98006E89EB /* sariomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sariomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534AED22364CB98006E89EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4534AED42364CB98006E89EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				4534AEE02364CB99006E89EB /* Info.plist */,
 				4508C6012364E0AB00A6D11F /* SariomoColor.swift */,
 				4508C6052364E94000A6D11F /* TabBarViewController.swift */,
+				451B445B236C126F0086666A /* TestXibView.swift */,
+				451B445D236C12850086666A /* TestXibView.xib */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451B445E236C12850086666A /* TestXibView.xib in Resources */,
 				4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */,
 				4534AEDF2364CB99006E89EB /* LaunchScreen.storyboard in Resources */,
 				4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */,
@@ -449,6 +456,7 @@
 			files = (
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
+				451B445C236C126F0086666A /* TestXibView.swift in Sources */,
 				455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */,
 				4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */,
 				4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */,

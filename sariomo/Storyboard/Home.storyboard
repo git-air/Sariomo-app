@@ -29,11 +29,21 @@
         <scene sceneID="cIz-2Z-NgW">
             <objects>
                 <viewController storyboardIdentifier="page2" id="oqf-YJ-YrJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ufm-2f-YZ9">
+                    <view key="view" contentMode="scaleToFill" id="kp6-yZ-SFl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-Cz-Q7O" customClass="TestXibView" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="283" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XN7-av-dYn"/>
+                                    <constraint firstAttribute="height" constant="200" id="t33-RZ-3QW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Uxd-yv-ini"/>
+                        <viewLayoutGuide key="safeArea" id="CcX-DG-g3r"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofz-dj-Ycq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
