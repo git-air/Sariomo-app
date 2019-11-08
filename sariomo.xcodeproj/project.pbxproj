@@ -10,6 +10,9 @@
 		14ED345A70C74846E8AF3F78 /* Pods_sariomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */; };
 		4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6012364E0AB00A6D11F /* SariomoColor.swift */; };
 		4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6052364E94000A6D11F /* TabBarViewController.swift */; };
+		451B445C236C126F0086666A /* TestXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B445B236C126F0086666A /* TestXibView.swift */; };
+		451B445E236C12850086666A /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451B445D236C12850086666A /* TestXibView.xib */; };
+		4529A7732372BAAF0095911D /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529A7722372BAAF0095911D /* FollowViewController.swift */; };
 		4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED22364CB98006E89EB /* AppDelegate.swift */; };
 		4534AED52364CB98006E89EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED42364CB98006E89EB /* SceneDelegate.swift */; };
 		4534AED72364CB98006E89EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED62364CB98006E89EB /* ViewController.swift */; };
@@ -22,6 +25,11 @@
 		4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF062364DBF5006E89EB /* Tanka.storyboard */; };
 		4534AF092364DC12006E89EB /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF082364DC12006E89EB /* Notification.storyboard */; };
 		4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF0A2364DC59006E89EB /* MyPage.storyboard */; };
+		454CF70F23752B32008352AD /* SearchElementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454CF70E23752B32008352AD /* SearchElementView.xib */; };
+		454CF7112375318F008352AD /* SearchElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7102375318F008352AD /* SearchElementView.swift */; };
+		454CF7132375344A008352AD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7122375344A008352AD /* SearchViewController.swift */; };
+		454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7172375BCD8008352AD /* UnFinishedViewController.swift */; };
+		454CF71A2375BCFC008352AD /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7192375BCFC008352AD /* FinishedViewController.swift */; };
 		455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E2E742366BAB900E4C7F8 /* TankaViewController.swift */; };
 		458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F3236945DA00A0497C /* HomeViewController.swift */; };
 		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
@@ -51,6 +59,9 @@
 		3F6D98404C983381CFD1971D /* Pods-sariomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomoTests.release.xcconfig"; path = "Target Support Files/Pods-sariomoTests/Pods-sariomoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4508C6012364E0AB00A6D11F /* SariomoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SariomoColor.swift; sourceTree = "<group>"; };
 		4508C6052364E94000A6D11F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		451B445B236C126F0086666A /* TestXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibView.swift; sourceTree = "<group>"; };
+		451B445D236C12850086666A /* TestXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
+		4529A7722372BAAF0095911D /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		4534AECF2364CB98006E89EB /* sariomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sariomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534AED22364CB98006E89EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4534AED42364CB98006E89EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +80,12 @@
 		4534AF062364DBF5006E89EB /* Tanka.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tanka.storyboard; sourceTree = "<group>"; };
 		4534AF082364DC12006E89EB /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		4534AF0A2364DC59006E89EB /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
-		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
+		454CF70E23752B32008352AD /* SearchElementView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchElementView.xib; sourceTree = "<group>"; };
+		454CF7102375318F008352AD /* SearchElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchElementView.swift; sourceTree = "<group>"; };
+		454CF7122375344A008352AD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		454CF7172375BCD8008352AD /* UnFinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnFinishedViewController.swift; sourceTree = "<group>"; };
+		454CF7192375BCFC008352AD /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
+		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/Controller/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
 		458FD1F3236945DA00A0497C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		5A8027A03EEA73BB4CA06878 /* Pods-sariomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo.debug.xcconfig"; path = "Target Support Files/Pods-sariomo/Pods-sariomo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +150,9 @@
 		4534AED12364CB98006E89EB /* sariomo */ = {
 			isa = PBXGroup;
 			children = (
-				458FD1F3236945DA00A0497C /* HomeViewController.swift */,
-				455E2E742366BAB900E4C7F8 /* TankaViewController.swift */,
+				454CF7162375BAD0008352AD /* Controller */,
+				454CF7152375BAC6008352AD /* Model */,
+				454CF7142375BAB3008352AD /* View */,
 				4534AF0C2364DC6B006E89EB /* Storyboard */,
 				4534AED22364CB98006E89EB /* AppDelegate.swift */,
 				4534AED42364CB98006E89EB /* SceneDelegate.swift */,
@@ -145,7 +162,6 @@
 				4534AEDD2364CB99006E89EB /* LaunchScreen.storyboard */,
 				4534AEE02364CB99006E89EB /* Info.plist */,
 				4508C6012364E0AB00A6D11F /* SariomoColor.swift */,
-				4508C6052364E94000A6D11F /* TabBarViewController.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -178,6 +194,38 @@
 				4534AF0A2364DC59006E89EB /* MyPage.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		454CF7142375BAB3008352AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				451B445B236C126F0086666A /* TestXibView.swift */,
+				451B445D236C12850086666A /* TestXibView.xib */,
+				454CF70E23752B32008352AD /* SearchElementView.xib */,
+				454CF7102375318F008352AD /* SearchElementView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		454CF7152375BAC6008352AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		454CF7162375BAD0008352AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				458FD1F3236945DA00A0497C /* HomeViewController.swift */,
+				455E2E742366BAB900E4C7F8 /* TankaViewController.swift */,
+				4508C6052364E94000A6D11F /* TabBarViewController.swift */,
+				454CF7122375344A008352AD /* SearchViewController.swift */,
+				4529A7722372BAAF0095911D /* FollowViewController.swift */,
+				454CF7172375BCD8008352AD /* UnFinishedViewController.swift */,
+				454CF7192375BCFC008352AD /* FinishedViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4F04C0B873938A2D1BE61F5A /* Pods */ = {
@@ -312,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454CF70F23752B32008352AD /* SearchElementView.xib in Resources */,
+				451B445E236C12850086666A /* TestXibView.xib in Resources */,
 				4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */,
 				4534AEDF2364CB99006E89EB /* LaunchScreen.storyboard in Resources */,
 				4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */,
@@ -448,12 +498,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
+				454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */,
+				454CF7132375344A008352AD /* SearchViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
+				451B445C236C126F0086666A /* TestXibView.swift in Sources */,
+				4529A7732372BAAF0095911D /* FollowViewController.swift in Sources */,
+				454CF71A2375BCFC008352AD /* FinishedViewController.swift in Sources */,
 				455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */,
 				4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */,
 				4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */,
 				458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */,
 				4534AED52364CB98006E89EB /* SceneDelegate.swift in Sources */,
+				454CF7112375318F008352AD /* SearchElementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,9 +45,9 @@ class HomeViewController: TabmanViewController {
     }
     
     private lazy var viewControllers: [UIViewController] = [
-           storyboard!.instantiateViewController(withIdentifier: "page1"),
-           storyboard!.instantiateViewController(withIdentifier: "page2"),
-           storyboard!.instantiateViewController(withIdentifier: "page3")
+           storyboard!.instantiateViewController(withIdentifier: "follow"),
+           storyboard!.instantiateViewController(withIdentifier: "unfinished"),
+           storyboard!.instantiateViewController(withIdentifier: "finished")
        ]
     
 }
