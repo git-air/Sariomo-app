@@ -7,6 +7,7 @@ target 'sariomo' do
   pod 'Alamofire', '< 5.0'
   pod 'SwiftyJSON'
   pod 'Tabman'
+  pod 'Nantes'
 
   # Pods for sariomo
 
