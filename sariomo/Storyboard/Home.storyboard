@@ -25,60 +25,76 @@
             </objects>
             <point key="canvasLocation" x="-249" y="157"/>
         </scene>
-        <!--View Controller-->
+        <!--follow-->
         <scene sceneID="cIz-2Z-NgW">
             <objects>
-                <viewController storyboardIdentifier="page2" id="oqf-YJ-YrJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="follow" id="oqf-YJ-YrJ" userLabel="follow" customClass="FollowViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kp6-yZ-SFl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-Cz-Q7O" customClass="TestXibView" customModule="sariomo" customModuleProvider="target">
-                                <rect key="frame" x="87" y="283" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="XN7-av-dYn"/>
-                                    <constraint firstAttribute="height" constant="200" id="t33-RZ-3QW"/>
-                                </constraints>
+                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-Cz-Q7O" customClass="TestXibView" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SAq-Cz-Q7O" firstAttribute="top" secondItem="CcX-DG-g3r" secondAttribute="top" constant="-44" id="1G9-Jc-k8v"/>
+                            <constraint firstItem="CcX-DG-g3r" firstAttribute="trailing" secondItem="SAq-Cz-Q7O" secondAttribute="trailing" id="28H-V7-Xw4"/>
+                            <constraint firstItem="SAq-Cz-Q7O" firstAttribute="leading" secondItem="CcX-DG-g3r" secondAttribute="leading" id="dNS-EK-WNe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CcX-DG-g3r"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofz-dj-Ycq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="158"/>
+            <point key="canvasLocation" x="1127.536231884058" y="-563.16964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--unfinished-->
         <scene sceneID="DRN-gK-ueZ">
             <objects>
-                <viewController storyboardIdentifier="page3" id="how-QQ-wvn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="unfinished" id="how-QQ-wvn" userLabel="unfinished" customClass="UnFinishedViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N8R-fU-C3K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9a-ly-oYl" customClass="TestXibView" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XdS-Jr-5zS"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIz-7r-mFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="872"/>
+            <point key="canvasLocation" x="1127.536231884058" y="178.79464285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--finished-->
         <scene sceneID="JOd-lk-yqJ">
             <objects>
-                <viewController storyboardIdentifier="page1" id="yj0-TC-OxZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="finished" id="yj0-TC-OxZ" userLabel="finished" customClass="FinishedViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19N-XT-GJI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IOn-Cu-vCA" customClass="TestXibView" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="eFI-Fx-nyr"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w47-Eh-LGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="-581"/>
+            <point key="canvasLocation" x="1127.536231884058" y="901.33928571428567"/>
         </scene>
     </scenes>
     <resources>

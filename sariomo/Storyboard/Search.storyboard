@@ -11,18 +11,23 @@
         <!--Search-->
         <scene sceneID="eDi-ni-uSf">
             <objects>
-                <viewController id="PW4-Xa-pcY" sceneMemberID="viewController">
+                <viewController id="PW4-Xa-pcY" customClass="SearchViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DCp-s8-rle">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcR-qc-I8M">
-                                <rect key="frame" x="186" y="276" width="54" height="21"/>
+                                <rect key="frame" x="180.5" y="109" width="53.5" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BiM-gE-2jl" customClass="SearchElementView" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="167" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MsT-Jm-sUV"/>
@@ -32,10 +37,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VR6-bD-swf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="141"/>
+            <point key="canvasLocation" x="111.59420289855073" y="140.625"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Search" width="30" height="30"/>
+        <image name="Search" width="25" height="25.333333969116211"/>
     </resources>
 </document>
