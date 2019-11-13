@@ -27,11 +27,36 @@ class FollowViewController: UIViewController {
         return v
     }()
     
+    var tanka: [String] = ["""
+賑やかな
+踊り楽しむ
+夏祭り
+終わりが近づく
+また来年ね
+""",
+                           """
+海外の
+声が飛び交う
+街並みに
+はなしわからぬ
+翻訳起動
+""",
+                           """
+もみじ舞う
+山を脇目に
+秋刀魚焼く
+香りに誘われ
+秋に近づく
+""",
+                           """
+test
+"""
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(theScrollView)
-        
         // constrain it 40-pts on each side
         NSLayoutConstraint.activate([
             theScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10.0),
@@ -53,16 +78,17 @@ class FollowViewController: UIViewController {
             theStackView.widthAnchor.constraint(equalTo: theScrollView.widthAnchor, constant: 0.0),
         ])
         
-        for i in 0..<3 {
+        for i in 0..<4 {
             let v = UIView.fromNib() as TestXibView
             
             // v.translatesAutoresizingMaskIntoConstraints = false
             
-            v.tankaLabel?.text = "tanka: \(i)"
+            v.tankaLabel?.numberOfLines = 0;
+            v.tankaLabel?.text = tanka[i]
             v.timeLabel?.text = time()
             v.authorLabel?.text = "User\(i)"
             
-            v.imageView.image = UIImage(named: "Image\(i)")
+            v.imageView.image = UIImage(named: "shiden\(i)")
             // v.imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 400)
             v.imageView.contentMode = .scaleAspectFill
             v.imageView.clipsToBounds = true

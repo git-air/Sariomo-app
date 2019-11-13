@@ -27,6 +27,26 @@ class UnFinishedViewController: UIViewController {
         return v
     }()
     
+    var tanka: [String] = ["""
+    賑やかな
+    踊り楽しむ
+    夏祭り
+    """,
+                               """
+    海外の
+    声が飛び交う
+    街並みに
+    はなしわからぬ
+    """,
+                               """
+    もみじ舞う
+    山を脇目に
+    """,
+                               """
+    test
+    """
+        ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,16 +77,17 @@ class UnFinishedViewController: UIViewController {
             theStackView.widthAnchor.constraint(equalTo: theScrollView.widthAnchor, constant: 0.0),
         ])
         
-        for i in 0..<3 {
+        for i in 0..<4 {
             let v = UIView.fromNib() as TestXibView
             
             // v.translatesAutoresizingMaskIntoConstraints = false
             
-            v.tankaLabel?.text = "tanka: \(i)"
+            v.tankaLabel?.numberOfLines = 0;
+            v.tankaLabel?.text = tanka[i]
             v.timeLabel?.text = time()
             v.authorLabel?.text = "User\(i)"
             
-            v.imageView.image = UIImage(named: "Image\(i)")
+            v.imageView.image = UIImage(named: "shiden\(i)")
             v.imageView.contentMode = .scaleAspectFill
             v.imageView.clipsToBounds = true
             
