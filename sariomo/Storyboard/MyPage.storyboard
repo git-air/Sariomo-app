@@ -11,7 +11,7 @@
         <!--MyPage-->
         <scene sceneID="pWg-ay-tG7">
             <objects>
-                <viewController id="e4S-zZ-ssk" sceneMemberID="viewController">
+                <viewController id="e4S-zZ-ssk" customClass="MyPageViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVe-5P-9SC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
