@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Llt-eD-5GF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e37-bM-2DB">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -101,12 +101,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moa-av-GbB">
+                                <rect key="frame" x="266" y="333" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Pvg-fH-zYo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tanka" image="Tanka" id="tkp-Mb-a5l"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="Tanka" image="Tanka" id="0ER-ta-BhI"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="phrase1Label" destination="oCX-xn-Ahy" id="pew-QQ-NIq"/>
                         <outlet property="phrase1TextField" destination="bgd-mb-gbY" id="JSp-zi-1wD"/>
@@ -118,11 +125,29 @@
                         <outlet property="phrase4TextField" destination="LDk-i3-c1y" id="IMi-oZ-Xfh"/>
                         <outlet property="phrase5Label" destination="o0p-aN-nzm" id="bh5-LN-E0D"/>
                         <outlet property="phrase5TextField" destination="24x-bS-ccN" id="hy8-Pk-nx9"/>
+                        <segue destination="e37-bM-2DB" kind="show" id="UHM-1o-2AG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5YS-Jb-bdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="142.61083743842366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KrR-F7-a1n">
+            <objects>
+                <viewController id="e37-bM-2DB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCR-X1-4jd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JGS-oS-urS"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="Iiv-re-CR4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zg-Hx-vqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="129"/>
         </scene>
     </scenes>
     <resources>

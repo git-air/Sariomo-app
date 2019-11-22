@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class MyPageViewController: UIViewController {
     
@@ -24,9 +25,12 @@ class MyPageViewController: UIViewController {
         print("******MyPage*******")
         
         let api = ApiManager(path: "/timeline")
-        let a = ApiManager(host: "https://httpbin.org", path: "/post", method: .post, parameters: parameter)
-        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error!) })
-        a.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error!) })
+        api.request(success: { (data: Dictionary) in print(data) }, fail: { (error: Error?) in print(error!) })
+        
+        func displayLabel(str: String, label: UILabel) {
+            print(str)
+            label.text = str
+        }
     }
     
 }
