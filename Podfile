@@ -8,6 +8,7 @@ target 'sariomo' do
   pod 'SwiftyJSON'
   pod 'Tabman'
   pod 'Nantes'
+  pod 'KRProgressHUD'
 
   # Pods for sariomo
 
