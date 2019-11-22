@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (4.9.1)
   - AutoInsetter (1.8.0)
+  - KRActivityIndicatorView (3.0.4)
+  - KRProgressHUD (3.4.4):
+    - KRActivityIndicatorView (= 3.0.4)
   - Nantes (0.0.8)
   - Pageboy (3.5.0)
   - SwiftyJSON (5.0.0)
@@ -10,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (< 5.0)
+  - KRProgressHUD
   - Nantes
   - SwiftyJSON
   - Tabman
@@ -18,6 +22,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AutoInsetter
+    - KRActivityIndicatorView
+    - KRProgressHUD
     - Nantes
     - Pageboy
     - SwiftyJSON
@@ -26,11 +32,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AutoInsetter: 0b90ca74e36561c340129045a3722c51a0b15c58
+  KRActivityIndicatorView: 549db10b9578d58bac73db063d8b544e8970f7f2
+  KRProgressHUD: c3b9a48a0ee4824ea13212ac3f1efa50dca021e3
   Nantes: 94a2e0c0b8207f12694f4ff6d96bf670adad3e27
   Pageboy: 3794c578aae5fcce06e90b3ed4a0ad6b807d75bb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Tabman: 63eae331ae7a9388ae389b1808f1939269fcdece
 
-PODFILE CHECKSUM: 6907880e31e245c6b12103384333357dccf6fe3b
+PODFILE CHECKSUM: 7848dc7adbb62174195addea6b93fd5469cad646
 
 COCOAPODS: 1.8.3
