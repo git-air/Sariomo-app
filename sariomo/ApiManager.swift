@@ -25,12 +25,18 @@ struct ApiManager {
     }
 
     func request(success: @escaping (_ data: Dictionary<String, Any>)-> Void, fail: @escaping (_ error: Error?)-> Void) {
-        Alamofire.request(url, method: method, parameters: parameters).responseJSON { response in
+        
+        let semaphore = DispatchSemaphore(value: 0)
+        let queue = DispatchQueue.global(qos: .utility)
+        
+        Alamofire.request(url, method: method, parameters: parameters).responseJSON(queue: queue) { response in
             if response.result.isSuccess {
                 success(response.result.value as! Dictionary)
             }else{
                 fail(response.result.error)
             }
+            semaphore.signal()
         }
+        semaphore.wait()
     }
 }
