@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class FollowViewController: UIViewController {
     
@@ -26,6 +27,8 @@ class FollowViewController: UIViewController {
         v.spacing = 600.0
         return v
     }()
+    
+    var tanka2: [String] = [String](repeating: "", count: 50)
     
     var tanka: [String] = ["""
 賑やかな
@@ -55,9 +58,50 @@ test
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        test()
+        layout()
         
+        createXib()
+        
+    }
+    
+    func time() -> String {
+        let dt = Date()
+        let dateFormatter = DateFormatter()
+        
+        // DateFormatter を使用して書式とロケールを指定する
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyyMMdd", options: 0, locale: Locale(identifier: "ja_JP"))
+        
+        return dateFormatter.string(from: dt)
+    }
+    
+    func test() {
+        let tankaApi = ApiManager(path: "/timeline")
+        tankaApi.request(success: { (data: Dictionary) in self.json(data: data) }, fail: { (error: Error?) in print(error!)})
+    }
+    
+    func json(data: Dictionary<String, Any>){
+        let json = JSON(data)
+        
+        var u = [String](repeating: "a", count: 50)
+        
+        for i in 0...2 {
+            var a = ""
+            for j in 1...5 {
+                let phrase = json["tankalist"][i]["phrase"]["\(j)"].string! + "\n"
+                // print(phrase)
+                a.append(phrase)
+            }
+            u[i] = a
+            print("@@@@@@@@@@@@@")
+            print(a)
+        }
+    }
+    
+    
+    func layout() {
         view.addSubview(theScrollView)
-        // constrain it 40-pts on each side
+        
         NSLayoutConstraint.activate([
             theScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10.0),
             theScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0.0),
@@ -77,14 +121,16 @@ test
             // stackView width = scrollView width -40 (20-pts padding on left & right
             theStackView.widthAnchor.constraint(equalTo: theScrollView.widthAnchor, constant: 0.0),
         ])
-        
-        for i in 0..<4 {
+    }
+    
+    func createXib() {
+        for i in 0..<3 {
             let v = UIView.fromNib() as TestXibView
             
             // v.translatesAutoresizingMaskIntoConstraints = false
             
             v.tankaLabel?.numberOfLines = 0;
-            v.tankaLabel?.text = tanka[i]
+            v.tankaLabel?.text = tanka2[i]
             v.timeLabel?.text = time()
             v.authorLabel?.text = "User\(i)"
             
@@ -94,48 +140,7 @@ test
             v.imageView.clipsToBounds = true
             
             theStackView.addArrangedSubview(v)
-            
         }
-        
-        //        // create an instance of SingleEvent from its xib/nib
-        //        let v = UIView.fromNib() as TestXibView
-        //
-        //        // we're going to use auto-layout & constraints
-        //        v.translatesAutoresizingMaskIntoConstraints = false
-        //
-        //        // set the text of the labels
-        //        v.tankaLabel?.text = "aaaaaaaa"
-        //        v.timeLabel?.text = time()
-        //        v.authorLabel?.text = "AIRU"
-        //
-        //        // set the image
-        //        v.imageView.image = UIImage(named: "hakodate_shiden")
-        //
-        //        // add the SingleEvent view
-        //        view.addSubview(v)
-        //
-        //        // constrain it 200 x 200, centered X & Y
-        //        //        NSLayoutConstraint.activate([
-        //        //            v.widthAnchor.constraint(equalToConstant: 10.0),
-        //        //            v.heightAnchor.constraint(equalToConstant: 10.0),
-        //        //            v.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        //        //            v.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        //        //            ])
-        //        v.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0).isActive = true
-        //        v.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
-        //        // v.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
-        
-        
-    }
-    
-    func time() -> String {
-        let dt = Date()
-        let dateFormatter = DateFormatter()
-        
-        // DateFormatter を使用して書式とロケールを指定する
-        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyyMMdd", options: 0, locale: Locale(identifier: "ja_JP"))
-        
-        return dateFormatter.string(from: dt)
     }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class UnFinishedViewController: UIViewController {
     
@@ -27,30 +28,42 @@ class UnFinishedViewController: UIViewController {
         return v
     }()
     
+    let parameter: [String: Any] = [
+        "phrase1": "aaa",
+        "phrase2": "iii",
+        "phrase3": "uuu",
+        "phrase4": "eee",
+        "phrase5": "ooo"
+    ]
+    
     var tanka: [String] = ["""
     賑やかな
     踊り楽しむ
     夏祭り
     """,
-                               """
+                           """
     海外の
     声が飛び交う
     街並みに
     はなしわからぬ
     """,
-                               """
+                           """
     もみじ舞う
     山を脇目に
     """,
-                               """
+                           """
     test
     """
-        ]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addView()
+        
+        print("******MyPage*******")
+        let api = ApiManager(path: "/timeline")
+        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error!) })
         
     }
     
