@@ -96,6 +96,7 @@ test
             print("@@@@@@@@@@@@@")
             print(a)
         }
+        print(u)
     }
     
     
