@@ -63,6 +63,12 @@ test
         
         createXib()
         
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5.0) {
+            print("5秒後に実行")
+    
+            
+        }
+        
     }
     
     func time() -> String {
@@ -76,8 +82,13 @@ test
     }
     
     func test() {
+        let semaphore = DispatchSemaphore(value: 0)
+        let queue = DispatchQueue.global(qos: .utility)
+        
         let tankaApi = ApiManager(path: "/timeline")
         tankaApi.request(success: { (data: Dictionary) in self.json(data: data) }, fail: { (error: Error?) in print(error!)})
+        semaphore.signal()
+        semaphore.wait()
     }
     
     func json(data: Dictionary<String, Any>){
@@ -141,6 +152,7 @@ test
             
             theStackView.addArrangedSubview(v)
         }
+        
     }
     
 }
