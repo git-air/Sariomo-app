@@ -12,7 +12,6 @@
 		4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6052364E94000A6D11F /* TabBarViewController.swift */; };
 		451B445C236C126F0086666A /* TestXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B445B236C126F0086666A /* TestXibView.swift */; };
 		451B445E236C12850086666A /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451B445D236C12850086666A /* TestXibView.xib */; };
-		4529A7732372BAAF0095911D /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529A7722372BAAF0095911D /* FollowViewController.swift */; };
 		4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED22364CB98006E89EB /* AppDelegate.swift */; };
 		4534AED52364CB98006E89EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED42364CB98006E89EB /* SceneDelegate.swift */; };
 		4534AED72364CB98006E89EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED62364CB98006E89EB /* ViewController.swift */; };
@@ -34,7 +33,13 @@
 		45715E9C237BF3FC00F56E62 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9B237BF3FC00F56E62 /* ApiManager.swift */; };
 		45715E9E237BF5E100F56E62 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9D237BF5E100F56E62 /* MyPageViewController.swift */; };
 		458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F3236945DA00A0497C /* HomeViewController.swift */; };
+		45A50910238CB69E00336D23 /* Tanka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5090F238CB69E00336D23 /* Tanka.swift */; };
 		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
+		45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */; };
+		45FC193F238CB8B200F9E96E /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC193E238CB8B200F9E96E /* FollowViewController.swift */; };
+		45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */; };
+		45FC1945238D613B00F9E96E /* TankaParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC1944238D613B00F9E96E /* TankaParser.swift */; };
+		45FC1947238D956F00F9E96E /* tankaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC1946238D956F00F9E96E /* tankaList.swift */; };
 		95BACD0A3077FA41A7E1E9B8 /* Pods_sariomo_sariomoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */; };
 		BEFA332D6232DE9F6D64D3D6 /* Pods_sariomoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD628C881DDA7C53E0F6172 /* Pods_sariomoTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +68,6 @@
 		4508C6052364E94000A6D11F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		451B445B236C126F0086666A /* TestXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibView.swift; sourceTree = "<group>"; };
 		451B445D236C12850086666A /* TestXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
-		4529A7722372BAAF0095911D /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		4534AECF2364CB98006E89EB /* sariomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sariomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534AED22364CB98006E89EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4534AED42364CB98006E89EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +95,13 @@
 		45715E9B237BF3FC00F56E62 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		45715E9D237BF5E100F56E62 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		458FD1F3236945DA00A0497C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		45A5090F238CB69E00336D23 /* Tanka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanka.swift; sourceTree = "<group>"; };
 		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTankaTableViewCell.swift; sourceTree = "<group>"; };
+		45FC193E238CB8B200F9E96E /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankaTableViewCell.swift; sourceTree = "<group>"; };
+		45FC1944238D613B00F9E96E /* TankaParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankaParser.swift; sourceTree = "<group>"; };
+		45FC1946238D956F00F9E96E /* tankaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tankaList.swift; sourceTree = "<group>"; };
 		5A8027A03EEA73BB4CA06878 /* Pods-sariomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomo.debug.xcconfig"; path = "Target Support Files/Pods-sariomo/Pods-sariomo.debug.xcconfig"; sourceTree = "<group>"; };
 		67255A3B0235D881D64DC8C7 /* Pods-sariomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sariomoTests.debug.xcconfig"; path = "Target Support Files/Pods-sariomoTests/Pods-sariomoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +177,11 @@
 				4534AEE02364CB99006E89EB /* Info.plist */,
 				4508C6012364E0AB00A6D11F /* SariomoColor.swift */,
 				45715E9B237BF3FC00F56E62 /* ApiManager.swift */,
+				45A5090F238CB69E00336D23 /* Tanka.swift */,
+				45FC1944238D613B00F9E96E /* TankaParser.swift */,
+				45FC1946238D956F00F9E96E /* tankaList.swift */,
+				45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */,
+				45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -226,7 +241,7 @@
 				455E2E742366BAB900E4C7F8 /* TankaViewController.swift */,
 				4508C6052364E94000A6D11F /* TabBarViewController.swift */,
 				454CF7122375344A008352AD /* SearchViewController.swift */,
-				4529A7722372BAAF0095911D /* FollowViewController.swift */,
+				45FC193E238CB8B200F9E96E /* FollowViewController.swift */,
 				454CF7172375BCD8008352AD /* UnFinishedViewController.swift */,
 				454CF7192375BCFC008352AD /* FinishedViewController.swift */,
 				45715E9D237BF5E100F56E62 /* MyPageViewController.swift */,
@@ -503,16 +518,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FC1945238D613B00F9E96E /* TankaParser.swift in Sources */,
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */,
 				454CF7132375344A008352AD /* SearchViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
+				45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */,
 				451B445C236C126F0086666A /* TestXibView.swift in Sources */,
-				4529A7732372BAAF0095911D /* FollowViewController.swift in Sources */,
+				45A50910238CB69E00336D23 /* Tanka.swift in Sources */,
 				454CF71A2375BCFC008352AD /* FinishedViewController.swift in Sources */,
+				45FC1947238D956F00F9E96E /* tankaList.swift in Sources */,
+				45FC193F238CB8B200F9E96E /* FollowViewController.swift in Sources */,
 				455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */,
 				4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */,
 				4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */,
+				45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */,
 				45715E9E237BF5E100F56E62 /* MyPageViewController.swift in Sources */,
 				45715E9C237BF3FC00F56E62 /* ApiManager.swift in Sources */,
 				458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */,

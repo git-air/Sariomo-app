@@ -11,112 +11,96 @@ import SwiftyJSON
 
 class UnFinishedViewController: UIViewController {
     
-    var theScrollView: UIScrollView = {
-        let v = UIScrollView()
-        v.translatesAutoresizingMaskIntoConstraints = false
-        // v.backgroundColor = .gray
-        return v
-    }()
+    @IBOutlet weak var tableView: UITableView!
     
-    var theStackView: UIStackView = {
-        let v = UIStackView()
-        v.translatesAutoresizingMaskIntoConstraints = false
-        v.axis = .vertical
-        v.alignment = .leading
-        v.distribution = .fillProportionally
-        v.spacing = 600.0
-        return v
-    }()
     
-    let parameter: [String: Any] = [
-        "phrase1": "aaa",
-        "phrase2": "iii",
-        "phrase3": "uuu",
-        "phrase4": "eee",
-        "phrase5": "ooo"
-    ]
+    var tankas: [Tanka] = []
+    var tankaTes: [Tankalist] = []
     
-    var tanka: [String] = ["""
-    賑やかな
-    踊り楽しむ
-    夏祭り
-    """,
-                           """
-    海外の
-    声が飛び交う
-    街並みに
-    はなしわからぬ
-    """,
-                           """
-    もみじ舞う
-    山を脇目に
-    """,
-                           """
-    test
-    """
-    ]
+    var json: JSON = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addView()
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        print("******MyPage*******")
-        let api = ApiManager(path: "/timeline")
-        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error!) })
+        unFinishedTanka()
+        
+        tableView.reloadData()
         
     }
     
-    func addView() {
-        view.addSubview(theScrollView)
+    func unFinishedTanka() {
+        let api = ApiManager(path: "/NocompleteTL")
+        api.request(success: {(data: Dictionary) in
+            self.tankaTes = self.a(data: data)
+            // self.json = JSON(data)
+            
+        }, fail: {(error: Error?) in
+            print(error!)
+        })
+    }
+    
+    func a(data: Dictionary<String, Any>) -> [Tankalist] {
+        let json = JSON(data)
+        print(json)
         
-        // constrain it 40-pts on each side
-        NSLayoutConstraint.activate([
-            theScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10.0),
-            theScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0.0),
-            theScrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10.0),
-            theScrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10.0),
-        ])
+        var a: [Tankalist] = []
         
-        theScrollView.addSubview(theStackView)
-        
-        NSLayoutConstraint.activate([
-            theStackView.topAnchor.constraint(equalTo: theScrollView.topAnchor, constant: 10.0),
-            theStackView.bottomAnchor.constraint(equalTo: theScrollView.bottomAnchor, constant: -10.0),
-            theStackView.leadingAnchor.constraint(equalTo: theScrollView.leadingAnchor, constant: 0.0),
-            theStackView.trailingAnchor.constraint(equalTo: theScrollView.trailingAnchor, constant: 0.0),
+        for i in 0...2 {
+            let tankaid: Int = json["tankalist"][i]["tankaid"].int!
+            print(tankaid)
             
-            // stackView width = scrollView width -40 (20-pts padding on left & right
-            theStackView.widthAnchor.constraint(equalTo: theScrollView.widthAnchor, constant: 0.0),
-        ])
-        
-        for i in 0..<4 {
-            let v = UIView.fromNib() as TestXibView
+            let sectionid: Int = json["tankalist"][i]["sectionid"].int!
+            let phrase: [String: String] = json["tankalist"][i]["phrase"].dictionaryObject as! [String: String]
+            let userid: [String: Int] = json["tankalist"][i]["userid"].dictionaryObject as! [String: Int]
+            let date: [String: String] = json["tankalist"][i]["date"].dictionaryObject as! [String: String]
+            let taglist: [String] = json["tankalist"][i]["taglist"].arrayObject as! [String]
+            let background: String = json["tankalist"][i]["background"].string!
+            let wordcolor: String = json["tankalist"][i]["wordcolor"].string!
             
-            // v.translatesAutoresizingMaskIntoConstraints = false
-            
-            v.tankaLabel?.numberOfLines = 0;
-            v.tankaLabel?.text = tanka[i]
-            v.timeLabel?.text = time()
-            v.authorLabel?.text = "User\(i)"
-            
-            v.imageView.image = UIImage(named: "shiden\(i)")
-            v.imageView.contentMode = .scaleAspectFill
-            v.imageView.clipsToBounds = true
-            
-            theStackView.addArrangedSubview(v)
-            
+            let t = Tankalist(tankaid: tankaid, sectionid: sectionid, phrase: phrase, userid: userid, date: date, taglist: taglist, background: background, wordcolor: wordcolor)
+            a.append(t)
         }
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        print(a)
+        return a
     }
     
-    func time() -> String {
-        let dt = Date()
-        let dateFormatter = DateFormatter()
-        
-        // DateFormatter を使用して書式とロケールを指定する
-        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyyMMdd", options: 0, locale: Locale(identifier: "ja_JP"))
-        
-        return dateFormatter.string(from: dt)
+}
+
+extension UnFinishedViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // tableView.deselectRow(at: indexPath, animated: true)
+        print("セルをタップ")
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 500
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
+
+extension UnFinishedViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tankaTes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TankaTableViewCell") as! TankaTableViewCell
+        
+        print("indexPath.row: \(indexPath.row)")
+        
+        cell.fill(tanka: tankaTes[indexPath.row], a: indexPath.row)
+        
+        
+        
+        return cell
+    }
 }
