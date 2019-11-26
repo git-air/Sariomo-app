@@ -35,6 +35,7 @@
 		458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F3236945DA00A0497C /* HomeViewController.swift */; };
 		45A50910238CB69E00336D23 /* Tanka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5090F238CB69E00336D23 /* Tanka.swift */; };
 		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
+		45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */; };
 		45FC193F238CB8B200F9E96E /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC193E238CB8B200F9E96E /* FollowViewController.swift */; };
 		45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */; };
 		45FC1945238D613B00F9E96E /* TankaParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC1944238D613B00F9E96E /* TankaParser.swift */; };
@@ -96,6 +97,7 @@
 		458FD1F3236945DA00A0497C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		45A5090F238CB69E00336D23 /* Tanka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanka.swift; sourceTree = "<group>"; };
 		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTankaTableViewCell.swift; sourceTree = "<group>"; };
 		45FC193E238CB8B200F9E96E /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankaTableViewCell.swift; sourceTree = "<group>"; };
 		45FC1944238D613B00F9E96E /* TankaParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankaParser.swift; sourceTree = "<group>"; };
@@ -175,10 +177,11 @@
 				4534AEE02364CB99006E89EB /* Info.plist */,
 				4508C6012364E0AB00A6D11F /* SariomoColor.swift */,
 				45715E9B237BF3FC00F56E62 /* ApiManager.swift */,
-				45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */,
 				45A5090F238CB69E00336D23 /* Tanka.swift */,
 				45FC1944238D613B00F9E96E /* TankaParser.swift */,
 				45FC1946238D956F00F9E96E /* tankaList.swift */,
+				45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */,
+				45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */,
 				4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */,
 				4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */,
+				45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */,
 				45715E9E237BF5E100F56E62 /* MyPageViewController.swift in Sources */,
 				45715E9C237BF3FC00F56E62 /* ApiManager.swift in Sources */,
 				458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */,

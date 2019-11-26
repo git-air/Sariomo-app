@@ -13,19 +13,17 @@ class UnFinishedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     var tankas: [Tanka] = []
     var tankaTes: [Tankalist] = []
+    
+    var json: JSON = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        let tanka = Tanka(photo: "shiden1", phrase1: "aaaaa", phrase2: "iiiiii", phrase3: "uuuuuu", phrase4: "eeeeee", phrase5: "oooooooo", date: "19.11.26", user: "AIRU")
-        
-        let tankas = [tanka]
-        self.tankas = tankas
         
         unFinishedTanka()
         
@@ -36,31 +34,38 @@ class UnFinishedViewController: UIViewController {
     func unFinishedTanka() {
         let api = ApiManager(path: "/NocompleteTL")
         api.request(success: {(data: Dictionary) in
-            self.tankaTes = [self.a(data: data)]
+            self.tankaTes = self.a(data: data)
+            // self.json = JSON(data)
             
         }, fail: {(error: Error?) in
             print(error!)
         })
     }
     
-    func a(data: Dictionary<String, Any>) -> Tankalist {
+    func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
         print(json)
         
-        let tankaid: Int = json["tankalist"][0]["tankaid"].int!
-        print(tankaid)
+        var a: [Tankalist] = []
         
-        let sectionid: Int = json["tankalist"][0]["sectionid"].int!
-        let phrase: [String: String] = json["tankalist"][0]["phrase"].dictionaryObject as! [String: String]
-        let userid: [String: Int] = json["tankalist"][0]["userid"].dictionaryObject as! [String: Int]
-        let date: [String: String] = json["tankalist"][0]["date"].dictionaryObject as! [String: String]
-        let taglist: [String] = json["tankalist"][0]["taglist"].arrayObject as! [String]
-        let background: String = json["tankalist"][0]["background"].string!
-        let wordcolor: String = json["tankalist"][0]["wordcolor"].string!
-        
-        let t = Tankalist(tankaid: tankaid, sectionid: sectionid, phrase: phrase, userid: userid, date: date, taglist: taglist, background: background, wordcolor: wordcolor)
-        
-        return t
+        for i in 0...2 {
+            let tankaid: Int = json["tankalist"][i]["tankaid"].int!
+            print(tankaid)
+            
+            let sectionid: Int = json["tankalist"][i]["sectionid"].int!
+            let phrase: [String: String] = json["tankalist"][i]["phrase"].dictionaryObject as! [String: String]
+            let userid: [String: Int] = json["tankalist"][i]["userid"].dictionaryObject as! [String: Int]
+            let date: [String: String] = json["tankalist"][i]["date"].dictionaryObject as! [String: String]
+            let taglist: [String] = json["tankalist"][i]["taglist"].arrayObject as! [String]
+            let background: String = json["tankalist"][i]["background"].string!
+            let wordcolor: String = json["tankalist"][i]["wordcolor"].string!
+            
+            let t = Tankalist(tankaid: tankaid, sectionid: sectionid, phrase: phrase, userid: userid, date: date, taglist: taglist, background: background, wordcolor: wordcolor)
+            a.append(t)
+        }
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        print(a)
+        return a
     }
     
 }
@@ -68,6 +73,7 @@ class UnFinishedViewController: UIViewController {
 extension UnFinishedViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // tableView.deselectRow(at: indexPath, animated: true)
         print("セルをタップ")
     }
     
@@ -89,7 +95,11 @@ extension UnFinishedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TankaTableViewCell") as! TankaTableViewCell
         
-        cell.fill(tanka: tankaTes[indexPath.row])
+        print("indexPath.row: \(indexPath.row)")
+        
+        cell.fill(tanka: tankaTes[indexPath.row], a: indexPath.row)
+        
+        
         
         return cell
     }

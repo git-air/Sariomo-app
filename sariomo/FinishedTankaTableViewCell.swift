@@ -1,8 +1,8 @@
 //
-//  TankaTableViewCell.swift
+//  FinishedTankaTableViewCell.swift
 //  sariomo
 //
-//  Created by AIRU ISHIKURA on 2019/11/26.
+//  Created by AIRU ISHIKURA on 2019/11/27.
 //  Copyright © 2019 AIRU ISHIKURA. All rights reserved.
 //
 
@@ -10,24 +10,25 @@ import Foundation
 import UIKit
 import SwiftyJSON
 
-class TankaTableViewCell: UITableViewCell {
+class FinishedTankaTableViewCell: UITableViewCell {
+        
+    @IBOutlet weak var finishedPhotoImageView: UIImageView!
     
-    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var finishedTankaLabel: UILabel!
+    @IBOutlet weak var finishedDateLabel: UILabel!
+    @IBOutlet weak var finishedUserLabel: UILabel!
     
-    @IBOutlet weak var tankaLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var userLabel: UILabel!
-    @IBOutlet weak var detailButton: UIButton!
+    @IBOutlet weak var finishedDetailLabel: UIButton!
     
     var json:JSON = []
     
     func fill(tanka: Tankalist, a: Int) {
-        photoImageView.image = UIImage(named: "shiden1")
-        photoImageView.alpha = 0.4
+        finishedPhotoImageView.image = UIImage(named: "shiden1")
+        finishedPhotoImageView.alpha = 0.4
         
-        dateLabel.text = self.time()
+        finishedDateLabel.text = self.time()
         
-        userLabel.text = String(tanka.userid["1"]!)
+        finishedUserLabel.text = String(tanka.userid["1"]!)
         
         self.phrase(tanka: tanka, i: a)
         
@@ -54,7 +55,7 @@ class TankaTableViewCell: UITableViewCell {
             a.append(phrase)
         }
         
-        tankaLabel.text = a
+        finishedTankaLabel.text = a
         a = ""
         print("@@@@@@@@@@@@@")
         print(a)
