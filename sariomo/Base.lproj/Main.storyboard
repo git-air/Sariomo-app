@@ -24,6 +24,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FgS-YM-ud1" customClass="TabBarViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="io6-2X-su4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BcF-Bj-MUa">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -99,7 +100,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registrationButton:" destination="US9-R8-5d6" eventType="touchUpInside" id="cvA-lN-PIe"/>
-                                    <segue destination="L6B-t2-ttQ" kind="show" id="pfj-EL-k0q"/>
+                                    <segue destination="FgS-YM-ud1" kind="show" id="OsE-lr-vlk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アカウントの作成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csa-sk-X0i">
@@ -129,7 +130,4 @@
             <point key="canvasLocation" x="138" y="-607"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="pfj-EL-k0q"/>
-    </inferredMetricsTieBreakers>
 </document>

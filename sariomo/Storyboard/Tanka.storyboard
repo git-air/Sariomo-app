@@ -263,6 +263,7 @@
                                             <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="postTanka:" destination="oSV-hA-xiR" id="yvr-FB-M3H"/>
+                                                <segue destination="AQc-3f-zBg" kind="show" id="nuB-3W-Ykd"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -290,6 +291,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Aj-Az-2Nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1783" y="156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VuU-1y-9XS">
+            <objects>
+                <viewController id="AQc-3f-zBg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4RV-go-GKs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1SB-ZL-6f8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZRa-Wx-kl0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mis-DJ-kS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752" y="155"/>
         </scene>
     </scenes>
     <resources>
