@@ -17,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         changeNavigationBarColor()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        
+        if(launchedBefore == true) {
+            UserDefaults.standard.set(false, forKey: "launchBefore")
+        } else {
+            UserDefaults.standard.set(true, forKey: "launchBefore")
+            
+            let registrationVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = registrationVC
+        }
+        
         return true
     }
     
