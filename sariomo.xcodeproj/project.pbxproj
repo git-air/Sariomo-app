@@ -32,6 +32,7 @@
 		455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E2E742366BAB900E4C7F8 /* TankaViewController.swift */; };
 		45715E9C237BF3FC00F56E62 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9B237BF3FC00F56E62 /* ApiManager.swift */; };
 		45715E9E237BF5E100F56E62 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9D237BF5E100F56E62 /* MyPageViewController.swift */; };
+		45747698238E475E008AAB02 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45747697238E475E008AAB02 /* BeaconViewController.swift */; };
 		4578CD86238DBC6600BC8609 /* FirstTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578CD85238DBC6600BC8609 /* FirstTankaViewController.swift */; };
 		4578CD88238DC5B700BC8609 /* DetailTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578CD87238DC5B700BC8609 /* DetailTankaViewController.swift */; };
 		4578CD8A238DCFCF00BC8609 /* BackgroundColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4578CD89238DCFCF00BC8609 /* BackgroundColor.storyboard */; };
@@ -40,6 +41,9 @@
 		458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F3236945DA00A0497C /* HomeViewController.swift */; };
 		45A50910238CB69E00336D23 /* Tanka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5090F238CB69E00336D23 /* Tanka.swift */; };
 		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
+		45DC4907238E793D00D3D816 /* TGRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574769B238E682B008AAB02 /* TGRFramework.framework */; };
+		45DC4908238E793D00D3D816 /* TGRFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4574769B238E682B008AAB02 /* TGRFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45DC490B238E795800D3D816 /* TGRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DC490A238E795800D3D816 /* TGRFramework.framework */; };
 		45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */; };
 		45FC193F238CB8B200F9E96E /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC193E238CB8B200F9E96E /* FollowViewController.swift */; };
 		45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */; };
@@ -65,6 +69,20 @@
 			remoteInfo = sariomo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45DC4909238E793D00D3D816 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45DC4908238E793D00D3D816 /* TGRFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomo_sariomoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +117,8 @@
 		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/Controller/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
 		45715E9B237BF3FC00F56E62 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		45715E9D237BF5E100F56E62 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		45747697238E475E008AAB02 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
+		4574769B238E682B008AAB02 /* TGRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TGRFramework.framework; path = ../Tangerine_SDK/sdk2.1.7/sdk2.1.7_iOS_Release/TGRFramework.framework; sourceTree = "<group>"; };
 		4578CD85238DBC6600BC8609 /* FirstTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTankaViewController.swift; sourceTree = "<group>"; };
 		4578CD87238DC5B700BC8609 /* DetailTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTankaViewController.swift; sourceTree = "<group>"; };
 		4578CD89238DCFCF00BC8609 /* BackgroundColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BackgroundColor.storyboard; sourceTree = "<group>"; };
@@ -107,6 +127,7 @@
 		458FD1F3236945DA00A0497C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		45A5090F238CB69E00336D23 /* Tanka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanka.swift; sourceTree = "<group>"; };
 		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		45DC490A238E795800D3D816 /* TGRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TGRFramework.framework; sourceTree = "<group>"; };
 		45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTankaTableViewCell.swift; sourceTree = "<group>"; };
 		45FC193E238CB8B200F9E96E /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankaTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,7 +147,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DC490B238E795800D3D816 /* TGRFramework.framework in Frameworks */,
 				14ED345A70C74846E8AF3F78 /* Pods_sariomo.framework in Frameworks */,
+				45DC4907238E793D00D3D816 /* TGRFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +175,7 @@
 		4534AEC62364CB98006E89EB = {
 			isa = PBXGroup;
 			children = (
+				45DC490A238E795800D3D816 /* TGRFramework.framework */,
 				4534AED12364CB98006E89EB /* sariomo */,
 				4534AEE82364CB99006E89EB /* sariomoTests */,
 				4534AEF32364CB99006E89EB /* sariomoUITests */,
@@ -259,6 +283,7 @@
 				4578CD85238DBC6600BC8609 /* FirstTankaViewController.swift */,
 				4578CD87238DC5B700BC8609 /* DetailTankaViewController.swift */,
 				4578CD90238DFB8900BC8609 /* RegistrationViewController.swift */,
+				45747697238E475E008AAB02 /* BeaconViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,6 +313,7 @@
 		AE8E17A9AEDA7AF5C6BCC31D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4574769B238E682B008AAB02 /* TGRFramework.framework */,
 				6F6661EF4843146E7D3C55ED /* Pods_sariomo.framework */,
 				223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */,
 				FBD628C881DDA7C53E0F6172 /* Pods_sariomoTests.framework */,
@@ -307,6 +333,8 @@
 				4534AECC2364CB98006E89EB /* Frameworks */,
 				4534AECD2364CB98006E89EB /* Resources */,
 				F7E1D659C2C4A8FFC3E863C4 /* [CP] Embed Pods Frameworks */,
+				45EA8C87238E708200394D1C /* ShellScript */,
+				45DC4909238E793D00D3D816 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -458,6 +486,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		45EA8C87238E708200394D1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xattr -cr ~/Library/Developer/Xcode/DerivedData || echo Clear\n";
+		};
 		6DA1BA935C60EE9AE2784B89 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,6 +592,7 @@
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */,
 				454CF7132375344A008352AD /* SearchViewController.swift in Sources */,
+				45747698238E475E008AAB02 /* BeaconViewController.swift in Sources */,
 				4578CD91238DFB8900BC8609 /* RegistrationViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
 				45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */,
@@ -741,11 +787,36 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T59TQJ3KS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sariomo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AutoInsetter\"",
+					"-framework",
+					"\"Nantes\"",
+					"-framework",
+					"\"Pageboy\"",
+					"-framework",
+					"\"SwiftyGif\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Tabman\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.air.sariomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -761,11 +832,36 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T59TQJ3KS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sariomo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AutoInsetter\"",
+					"-framework",
+					"\"Nantes\"",
+					"-framework",
+					"\"Pageboy\"",
+					"-framework",
+					"\"SwiftyGif\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Tabman\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.air.sariomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
