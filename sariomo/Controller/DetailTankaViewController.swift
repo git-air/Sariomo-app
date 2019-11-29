@@ -101,8 +101,10 @@ class DetailTankaViewController: UIViewController {
         let api = ApiManager(host: "***REMOVED***", path: "/addPhrase", method: .post, parameters: parameter)
         
         api.request(success: {(data:Any) in
+            print("success")
             print(data)
         }, fail: {(error: Error?) in
+            print("fail")
             print(error!)
         })
     }

@@ -8,6 +8,8 @@ target 'sariomo' do
   pod 'SwiftyJSON'
   pod 'Tabman'
   pod 'Nantes'
+# source 'https://github.com/CocoaPods/Specs.git'
+  pod 'SwiftyGif'
 
   # Pods for sariomo
 

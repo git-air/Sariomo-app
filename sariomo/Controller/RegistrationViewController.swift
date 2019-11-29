@@ -36,8 +36,10 @@ class RegistrationViewController: UIViewController {
     }
     
     @IBAction func registrationButton(_ sender: UIButton) {
+        let name = textField.text!
+        print("nama: \(name)")
         let parameter: [String: Any] = [
-            "username": textField.text!,
+            "username": name
         ]
         let api = ApiManager(host: "***REMOVED***", path: "/adduser", method: .post, parameters: parameter)
         

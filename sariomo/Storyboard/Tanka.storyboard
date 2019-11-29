@@ -292,25 +292,75 @@
             </objects>
             <point key="canvasLocation" x="1783" y="156"/>
         </scene>
-        <!--View Controller-->
+        <!--Beacon View Controller-->
         <scene sceneID="VuU-1y-9XS">
             <objects>
-                <viewController id="AQc-3f-zBg" sceneMemberID="viewController">
+                <viewController id="AQc-3f-zBg" customClass="BeaconViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4RV-go-GKs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hakodate_shiden" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-W1-VjF">
+                                <rect key="frame" x="75" y="193" width="264" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ビーコン検知中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-hI-ccu">
+                                <rect key="frame" x="48" y="415" width="319" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-it-Wfd">
+                                <rect key="frame" x="48" y="20" width="81" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="tapToBack:" destination="AQc-3f-zBg" eventType="touchUpInside" id="u4Y-5c-N5W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1SB-ZL-6f8"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZRa-Wx-kl0"/>
+                    <connections>
+                        <segue destination="wq9-8X-iay" kind="show" identifier="toPostedTanka" id="yTo-PW-t7L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mis-DJ-kS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2752" y="155"/>
+            <point key="canvasLocation" x="2750.7246376811595" y="154.6875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zUs-hH-e3L">
+            <objects>
+                <viewController storyboardIdentifier="postedTanka" id="wq9-8X-iay" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Muo-m2-B3L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投稿完了！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-cc-fyV">
+                                <rect key="frame" x="57" y="300" width="300" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qiW-Y7-okY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vcD-5K-3NY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQd-W1-gpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3849.275362318841" y="139.95535714285714"/>
         </scene>
     </scenes>
     <resources>
         <image name="Tanka" width="25" height="25"/>
+        <image name="hakodate_shiden" width="800" height="529"/>
         <image name="summer" width="640" height="502"/>
     </resources>
 </document>
