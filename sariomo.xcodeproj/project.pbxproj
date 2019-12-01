@@ -24,6 +24,7 @@
 		4534AF072364DBF5006E89EB /* Tanka.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF062364DBF5006E89EB /* Tanka.storyboard */; };
 		4534AF092364DC12006E89EB /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF082364DC12006E89EB /* Notification.storyboard */; };
 		4534AF0B2364DC59006E89EB /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534AF0A2364DC59006E89EB /* MyPage.storyboard */; };
+		453D83B72390B59500FBECBF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D83B62390B59500FBECBF /* CustomButton.swift */; };
 		454CF70F23752B32008352AD /* SearchElementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454CF70E23752B32008352AD /* SearchElementView.xib */; };
 		454CF7112375318F008352AD /* SearchElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7102375318F008352AD /* SearchElementView.swift */; };
 		454CF7132375344A008352AD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7122375344A008352AD /* SearchViewController.swift */; };
@@ -109,6 +110,7 @@
 		4534AF062364DBF5006E89EB /* Tanka.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tanka.storyboard; sourceTree = "<group>"; };
 		4534AF082364DC12006E89EB /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		4534AF0A2364DC59006E89EB /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		453D83B62390B59500FBECBF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		454CF70E23752B32008352AD /* SearchElementView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchElementView.xib; sourceTree = "<group>"; };
 		454CF7102375318F008352AD /* SearchElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchElementView.swift; sourceTree = "<group>"; };
 		454CF7122375344A008352AD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				45FC1946238D956F00F9E96E /* tankaList.swift */,
 				45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */,
 				45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */,
+				453D83B62390B59500FBECBF /* CustomButton.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */,
 				454CF7132375344A008352AD /* SearchViewController.swift in Sources */,
+				453D83B72390B59500FBECBF /* CustomButton.swift in Sources */,
 				45747698238E475E008AAB02 /* BeaconViewController.swift in Sources */,
 				4578CD91238DFB8900BC8609 /* RegistrationViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
