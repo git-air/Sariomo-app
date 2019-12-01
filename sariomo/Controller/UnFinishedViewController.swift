@@ -13,6 +13,7 @@ class UnFinishedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var detailButton: UIButton!
     
     var tankas: [Tanka] = []
     var tankaTes: [Tankalist] = []
@@ -30,6 +31,8 @@ class UnFinishedViewController: UIViewController {
         tableView.reloadData()
         
     }
+    
+    
     
     func unFinishedTanka() {
         let api = ApiManager(path: "/NocompleteTL")
