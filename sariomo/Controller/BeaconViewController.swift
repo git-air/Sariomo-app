@@ -19,15 +19,44 @@ class BeaconViewController: UIViewController {
     let enableADID: Bool = true
     let enableNotify: Bool = true
     
+    var detectionBeaconView: DetectionBeaconView!
+    
+    var isFirstDetection = true
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.detectionBeaconView.doAnimation()
+        startMonitor()
+    }
+    
+    func initView() {
+        self.detectionBeaconView = DetectionBeaconView.init(frame: self.view.frame)
+        self.view.addSubview(detectionBeaconView)
+    }
+    
+    func showDetectionBeaconView(_ bool: Bool) {
+        UIView.animate(withDuration: 0.6, animations: {
+            self.detectionBeaconView.alpha = bool ? 1 : 0
+        }, completion: { _ -> Void in
+            if !bool && self.isFirstDetection {
+                self.isFirstDetection = false
+            }
+            self.detectionBeaconView.animationBool = false
+        })
     }
     
     @IBAction func tapToBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
+    
     
 }
 
@@ -40,7 +69,7 @@ extension BeaconViewController: TGRClientDelegate {
     }
     
     func didEnter(withParams params: [AnyHashable: Any]!, rssi: NSNumber) {
-        self.performSegue(withIdentifier: "toPostedTanka", sender: nil)
+        self.showDetectionBeaconView(false)
     }
     
     func didExit(withParams params: [AnyHashable : Any]!, rssi: NSNumber!) {
