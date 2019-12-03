@@ -33,6 +33,7 @@ class TankaTableViewCell: UITableViewCell {
         
     }
     
+    
     func time() -> String {
         let dt = Date()
         let dateFormatter = DateFormatter()
@@ -63,6 +64,12 @@ class TankaTableViewCell: UITableViewCell {
     func json(data: Dictionary<String, Any>) {
         self.json = JSON(data)
     }
+    
+    @IBAction func test(_ sender: Any) {
+        // self.performSegue(withIdentifier: "toTest", sender: nil)
+        print("aaaaaaaaa")
+    }
+    
     
     
 }

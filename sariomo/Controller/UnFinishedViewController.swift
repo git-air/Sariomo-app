@@ -71,6 +71,18 @@ class UnFinishedViewController: UIViewController {
         return a
     }
     
+    @IBAction func test(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let second = storyboard.instantiateViewController(withIdentifier: "DetailTankaShowViewController") as! DetailTankaShowViewController
+        // second.tanka = tankaTes[0].phrase["1"]!
+        second.t = tankaTes[sender.tag]
+        self.present(second, animated: true, completion: nil)
+        print(tankaTes[0].phrase)
+        print("aaaaa")
+        print(sender.tag)
+    }
+    
+    
 }
 
 extension UnFinishedViewController: UITableViewDelegate {
@@ -101,6 +113,8 @@ extension UnFinishedViewController: UITableViewDataSource {
         print("indexPath.row: \(indexPath.row)")
         
         cell.fill(tanka: tankaTes[indexPath.row], a: indexPath.row)
+        
+        cell.detailButton.tag = indexPath.row
         
         
         

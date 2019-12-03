@@ -33,18 +33,17 @@
 		455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E2E742366BAB900E4C7F8 /* TankaViewController.swift */; };
 		45715E9C237BF3FC00F56E62 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9B237BF3FC00F56E62 /* ApiManager.swift */; };
 		45715E9E237BF5E100F56E62 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9D237BF5E100F56E62 /* MyPageViewController.swift */; };
-		4572905B2394FEEE00B9E45F /* TGRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574769B238E682B008AAB02 /* TGRFramework.framework */; };
-		4572905C2394FEEE00B9E45F /* TGRFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4574769B238E682B008AAB02 /* TGRFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4572905F2394FF1A00B9E45F /* TGRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4572905E2394FF1A00B9E45F /* TGRFramework.framework */; };
 		45747698238E475E008AAB02 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45747697238E475E008AAB02 /* BeaconViewController.swift */; };
 		4578CD86238DBC6600BC8609 /* FirstTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578CD85238DBC6600BC8609 /* FirstTankaViewController.swift */; };
-		4578CD88238DC5B700BC8609 /* DetailTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578CD87238DC5B700BC8609 /* DetailTankaViewController.swift */; };
 		4578CD8A238DCFCF00BC8609 /* BackgroundColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4578CD89238DCFCF00BC8609 /* BackgroundColor.storyboard */; };
 		4578CD8C238DCFF900BC8609 /* TextColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4578CD8B238DCFF900BC8609 /* TextColor.storyboard */; };
 		4578CD91238DFB8900BC8609 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578CD90238DFB8900BC8609 /* RegistrationViewController.swift */; };
 		4588171423945A4C00FB5797 /* DetectionBeacon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4588171323945A4C00FB5797 /* DetectionBeacon.xib */; };
 		4588171623945B3C00FB5797 /* DetectionBeaconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4588171523945B3C00FB5797 /* DetectionBeaconView.swift */; };
 		458FD1F4236945DA00A0497C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FD1F3236945DA00A0497C /* HomeViewController.swift */; };
+		4594F1DC2396BA620087F18B /* MyCustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594F1DB2396BA620087F18B /* MyCustomData.swift */; };
+		4594F1DE2396D1D10087F18B /* DetailTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */; };
+		4594F1E02396D35B0087F18B /* DetailTankaShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */; };
 		45A50910238CB69E00336D23 /* Tanka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5090F238CB69E00336D23 /* Tanka.swift */; };
 		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
 		45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */; };
@@ -72,20 +71,6 @@
 			remoteInfo = sariomo;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4572905D2394FEEE00B9E45F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4572905C2394FEEE00B9E45F /* TGRFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		223145357115B6E24DC94924 /* Pods_sariomo_sariomoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sariomo_sariomoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,17 +106,18 @@
 		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/Controller/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
 		45715E9B237BF3FC00F56E62 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		45715E9D237BF5E100F56E62 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		4572905E2394FF1A00B9E45F /* TGRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TGRFramework.framework; sourceTree = "<group>"; };
 		45747697238E475E008AAB02 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
 		4574769B238E682B008AAB02 /* TGRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TGRFramework.framework; path = ../Tangerine_SDK/sdk2.1.7/sdk2.1.7_iOS_Release/TGRFramework.framework; sourceTree = "<group>"; };
 		4578CD85238DBC6600BC8609 /* FirstTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTankaViewController.swift; sourceTree = "<group>"; };
-		4578CD87238DC5B700BC8609 /* DetailTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTankaViewController.swift; sourceTree = "<group>"; };
 		4578CD89238DCFCF00BC8609 /* BackgroundColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BackgroundColor.storyboard; sourceTree = "<group>"; };
 		4578CD8B238DCFF900BC8609 /* TextColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextColor.storyboard; sourceTree = "<group>"; };
 		4578CD90238DFB8900BC8609 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4588171323945A4C00FB5797 /* DetectionBeacon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetectionBeacon.xib; sourceTree = "<group>"; };
 		4588171523945B3C00FB5797 /* DetectionBeaconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionBeaconView.swift; sourceTree = "<group>"; };
 		458FD1F3236945DA00A0497C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4594F1DB2396BA620087F18B /* MyCustomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomData.swift; sourceTree = "<group>"; };
+		4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTankaViewController.swift; sourceTree = "<group>"; };
+		4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTankaShowViewController.swift; sourceTree = "<group>"; };
 		45A5090F238CB69E00336D23 /* Tanka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanka.swift; sourceTree = "<group>"; };
 		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTankaTableViewCell.swift; sourceTree = "<group>"; };
@@ -153,9 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4572905F2394FF1A00B9E45F /* TGRFramework.framework in Frameworks */,
 				14ED345A70C74846E8AF3F78 /* Pods_sariomo.framework in Frameworks */,
-				4572905B2394FEEE00B9E45F /* TGRFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +165,6 @@
 		4534AEC62364CB98006E89EB = {
 			isa = PBXGroup;
 			children = (
-				4572905E2394FF1A00B9E45F /* TGRFramework.framework */,
 				4534AED12364CB98006E89EB /* sariomo */,
 				4534AEE82364CB99006E89EB /* sariomoTests */,
 				4534AEF32364CB99006E89EB /* sariomoUITests */,
@@ -223,6 +206,7 @@
 				45FC1940238CC01F00F9E96E /* TankaTableViewCell.swift */,
 				45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */,
 				453D83B62390B59500FBECBF /* CustomButton.swift */,
+				4594F1DB2396BA620087F18B /* MyCustomData.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -290,9 +274,10 @@
 				454CF7192375BCFC008352AD /* FinishedViewController.swift */,
 				45715E9D237BF5E100F56E62 /* MyPageViewController.swift */,
 				4578CD85238DBC6600BC8609 /* FirstTankaViewController.swift */,
-				4578CD87238DC5B700BC8609 /* DetailTankaViewController.swift */,
 				4578CD90238DFB8900BC8609 /* RegistrationViewController.swift */,
 				45747697238E475E008AAB02 /* BeaconViewController.swift */,
+				4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */,
+				4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,7 +328,6 @@
 				4534AECD2364CB98006E89EB /* Resources */,
 				F7E1D659C2C4A8FFC3E863C4 /* [CP] Embed Pods Frameworks */,
 				4572905A2394CB0200B9E45F /* ShellScript */,
-				4572905D2394FEEE00B9E45F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -608,8 +592,10 @@
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
 				45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */,
 				451B445C236C126F0086666A /* TestXibView.swift in Sources */,
-				4578CD88238DC5B700BC8609 /* DetailTankaViewController.swift in Sources */,
+				4594F1DE2396D1D10087F18B /* DetailTankaViewController.swift in Sources */,
 				4578CD86238DBC6600BC8609 /* FirstTankaViewController.swift in Sources */,
+				4594F1E02396D35B0087F18B /* DetailTankaShowViewController.swift in Sources */,
+				4594F1DC2396BA620087F18B /* MyCustomData.swift in Sources */,
 				45A50910238CB69E00336D23 /* Tanka.swift in Sources */,
 				454CF71A2375BCFC008352AD /* FinishedViewController.swift in Sources */,
 				45FC1947238D956F00F9E96E /* tankaList.swift in Sources */,
