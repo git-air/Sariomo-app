@@ -263,7 +263,7 @@
                                             <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="postTanka:" destination="oSV-hA-xiR" id="yvr-FB-M3H"/>
-                                                <segue destination="AQc-3f-zBg" kind="show" id="nuB-3W-Ykd"/>
+                                                <segue destination="UFM-8f-AU7" kind="show" id="1pG-Py-H5t"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -589,12 +589,28 @@
             </objects>
             <point key="canvasLocation" x="1828.985507246377" y="173.4375"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gVK-sg-lmS">
+            <objects>
+                <viewController id="UFM-8f-AU7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BmD-F6-qeu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lzw-Bf-r38"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jKG-Qy-A55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMI-Iy-kkt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2718" y="-272"/>
+        </scene>
         <!--Beacon View Controller-->
         <scene sceneID="VuU-1y-9XS">
             <objects>
                 <viewController id="AQc-3f-zBg" customClass="BeaconViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4RV-go-GKs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hakodate_shiden" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-W1-VjF">
@@ -627,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mis-DJ-kS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2750.7246376811595" y="154.6875"/>
+            <point key="canvasLocation" x="2994" y="391"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zUs-hH-e3L">
