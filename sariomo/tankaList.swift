@@ -12,8 +12,8 @@ import Foundation
 class Tankalist: Codable {
     let tankaid, sectionid: Int
     let phrase: [String: String]
-    let userid: [String: Int]
-    let date: [String: String]
+    var userid: [String: Int]
+    var date: [String: String]
     let taglist: [String]
     let background, wordcolor: String
 

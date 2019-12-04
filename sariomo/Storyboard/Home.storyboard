@@ -94,6 +94,9 @@
                                                     <state key="normal" title="Detail">
                                                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="test:" destination="how-QQ-wvn" eventType="touchUpInside" id="4pE-bg-H0z"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanka" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-dG-2fY">
                                                     <rect key="frame" x="-19" y="76" width="274" height="262"/>
@@ -120,6 +123,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="cKl-eP-hQP" id="DJ9-ro-mZr"/>
+                                            <outlet property="detailButton" destination="XnN-sb-e4d" id="2VG-cM-G8S"/>
                                             <outlet property="photoImageView" destination="99u-Qd-YNb" id="tg9-Az-r20"/>
                                             <outlet property="tankaLabel" destination="gVa-dG-2fY" id="NDC-4f-7Uu"/>
                                             <outlet property="userLabel" destination="ThX-Oq-Vrt" id="8Cl-CD-eCN"/>
@@ -145,25 +149,14 @@
             </objects>
             <point key="canvasLocation" x="1127.536231884058" y="178.79464285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Tanka Show View Controller-->
         <scene sceneID="pf1-Er-wJU">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="K8a-vJ-nql" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailTankaShowViewController" wantsFullScreenLayout="YES" id="K8a-vJ-nql" customClass="DetailTankaShowViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AKU-9V-8gC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRv-eq-mN3">
-                                <rect key="frame" x="0.0" y="65" width="414" height="449"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-0W-sPS">
-                                <rect key="frame" x="186" y="279" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSv-oo-iUW">
                                 <rect key="frame" x="49" y="561" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -248,11 +241,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVz-62-qUf">
+                                <rect key="frame" x="0.0" y="63" width="414" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI8-n4-C1Q">
+                                        <rect key="frame" x="22" y="20" width="31" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="戻る"/>
+                                        <connections>
+                                            <action selector="back:" destination="K8a-vJ-nql" eventType="touchUpInside" id="gBv-ZN-67H"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-0W-sPS">
+                                        <rect key="frame" x="94" y="153" width="227" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xxr-0o-rmc"/>
                     </view>
                     <navigationItem key="navigationItem" id="UbQ-Ny-kQv"/>
+                    <connections>
+                        <outlet property="date1Label" destination="thx-bV-U7v" id="CTw-cX-teF"/>
+                        <outlet property="date2Label" destination="RZU-3V-rBN" id="D2w-0s-HBp"/>
+                        <outlet property="date3Label" destination="EQr-6r-ako" id="qBd-kx-GhP"/>
+                        <outlet property="date4Label" destination="WOo-1l-cf9" id="B1U-BT-56U"/>
+                        <outlet property="date5Label" destination="E4C-l4-7TH" id="Gvi-wM-Ogz"/>
+                        <outlet property="kukanLabel" destination="KCy-Ty-cCp" id="SRc-TK-nYx"/>
+                        <outlet property="tagLabel" destination="kSv-oo-iUW" id="A2j-D5-q92"/>
+                        <outlet property="tankaLabel" destination="X0m-0W-sPS" id="XMl-Um-K8l"/>
+                        <outlet property="tankaView" destination="QVz-62-qUf" id="p6V-Cg-YmK"/>
+                        <outlet property="user1Label" destination="V6n-CB-AQ7" id="UyL-1O-12n"/>
+                        <outlet property="user2Label" destination="t5W-Y2-tAi" id="IAc-XH-eei"/>
+                        <outlet property="user3Label" destination="fF1-VO-7B7" id="94X-eQ-7Gv"/>
+                        <outlet property="user4Label" destination="sCp-Ka-TD9" id="DAe-GL-F8h"/>
+                        <outlet property="user5Label" destination="Iys-To-fY1" id="ryE-qc-RWN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeY-5N-reM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,25 +310,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shiden2" translatesAutoresizingMaskIntoConstraints="NO" id="e9L-ih-ajI">
-                                                    <rect key="frame" x="8" y="8" width="0.0" height="398"/>
+                                                    <rect key="frame" x="8" y="8" width="0.0" height="0.0"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="e9L-ih-ajI" secondAttribute="height" multiplier="1:1" id="yqr-Tj-49K"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIu-yh-Qnz">
-                                                    <rect key="frame" x="46" y="466" width="36" height="21"/>
+                                                    <rect key="frame" x="46" y="68" width="36" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xex-lm-poY">
-                                                    <rect key="frame" x="11.5" y="466" width="37" height="21"/>
+                                                    <rect key="frame" x="11.5" y="68" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPx-fn-k0I">
-                                                    <rect key="frame" x="76" y="547" width="0.0" height="30"/>
+                                                    <rect key="frame" x="76" y="149" width="0.0" height="30"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="Detail">
                                                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>

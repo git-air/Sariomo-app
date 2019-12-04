@@ -9,7 +9,7 @@
 import UIKit
 
 class RegistrationViewController: UIViewController {
-
+    
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var signUpButton: UIButton!
@@ -38,7 +38,7 @@ class RegistrationViewController: UIViewController {
     @IBAction func registrationButton(_ sender: UIButton) {
         let name = textField.text!
         print("nama: \(name)")
-        let parameter: [String: Any] = [
+        let parameter = [
             "username": name
         ]
         let api = ApiManager(host: "***REMOVED***", path: "/adduser", method: .post, parameters: parameter)
@@ -48,10 +48,10 @@ class RegistrationViewController: UIViewController {
         }, fail: {(error: Error?) in
             print(error!)
         })
-
+        
     }
     
-
+    
 }
 
 extension UITextField {

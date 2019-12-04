@@ -28,10 +28,14 @@ class TankaTableViewCell: UITableViewCell {
         dateLabel.text = self.time()
         
         userLabel.text = String(tanka.userid["1"]!)
+        // test()
         
         self.phrase(tanka: tanka, i: a)
         
     }
+    
+    
+    
     
     func time() -> String {
         let dt = Date()
@@ -63,6 +67,12 @@ class TankaTableViewCell: UITableViewCell {
     func json(data: Dictionary<String, Any>) {
         self.json = JSON(data)
     }
+    
+    @IBAction func test(_ sender: Any) {
+        // self.performSegue(withIdentifier: "toTest", sender: nil)
+        print("aaaaaaaaa")
+    }
+    
     
     
 }

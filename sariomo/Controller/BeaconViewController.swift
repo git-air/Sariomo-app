@@ -8,11 +8,11 @@
 
 import UIKit
 import SwiftyGif
-import TGRFramework
+// import TGRFramework
 
 class BeaconViewController: UIViewController {
     
-    var tgrClient: TGRClient?
+    // var tgrClient: TGRClient?
     let appId: String = "293"
     let developerId: String = "89"
     let serviceId: String = "1082454069"
@@ -32,7 +32,7 @@ class BeaconViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.detectionBeaconView.doAnimation()
-        startMonitor()
+        // startMonitor()
     }
     
     func initView() {
@@ -60,25 +60,25 @@ class BeaconViewController: UIViewController {
     
 }
 
-extension BeaconViewController: TGRClientDelegate {
-    
-    func startMonitor() {
-        let option = TGRInitOption(appId: appId, devId: developerId, serviceId: serviceId, enableADID: enableADID, enableNotify: enableNotify)
-        tgrClient = TGRClient(option: option, delegate: self)
-        tgrClient?.startMonitoring()
-    }
-    
-    func didEnter(withParams params: [AnyHashable: Any]!, rssi: NSNumber) {
-        self.showDetectionBeaconView(false)
-    }
-    
-    func didExit(withParams params: [AnyHashable : Any]!, rssi: NSNumber!) {
-        print("ビーコン範囲外です")
-    }
-    
-    func didFailWith(_ errorType: TGRErrorType, error: Error!) {
-        print("不明なエラーです。")
-    }
-
-
-}
+//extension BeaconViewController: TGRClientDelegate {
+//
+//    func startMonitor() {
+//        let option = TGRInitOption(appId: appId, devId: developerId, serviceId: serviceId, enableADID: enableADID, enableNotify: enableNotify)
+//        tgrClient = TGRClient(option: option, delegate: self)
+//        tgrClient?.startMonitoring()
+//    }
+//
+//    func didEnter(withParams params: [AnyHashable: Any]!, rssi: NSNumber) {
+//        self.showDetectionBeaconView(false)
+//    }
+//
+//    func didExit(withParams params: [AnyHashable : Any]!, rssi: NSNumber!) {
+//        print("ビーコン範囲外です")
+//    }
+//
+//    func didFailWith(_ errorType: TGRErrorType, error: Error!) {
+//        print("不明なエラーです。")
+//    }
+//
+//
+//}

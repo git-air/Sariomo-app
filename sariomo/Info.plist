@@ -66,5 +66,10 @@
 	<string>iBeaconの設定情報を取得するために利用します。</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>iBeaconの設定情報を取得するために利用します。</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
