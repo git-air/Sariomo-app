@@ -28,10 +28,13 @@ class TankaTableViewCell: UITableViewCell {
         dateLabel.text = self.time()
         
         userLabel.text = String(tanka.userid["1"]!)
+        // test()
         
         self.phrase(tanka: tanka, i: a)
         
     }
+    
+    
     
     
     func time() -> String {

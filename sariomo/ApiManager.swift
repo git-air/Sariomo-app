@@ -29,17 +29,19 @@ struct ApiManager {
         let semaphore = DispatchSemaphore(value: 0)
         let queue = DispatchQueue.global(qos: .utility)
         
-        if (self.method == .post) {
-            Alamofire.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default).responseJSON(queue: queue) { response in
+        if (method == .post) {
+            print("postgayobareta")
+            Alamofire.request(self.url, method: self.method, parameters: self.parameters, encoding: JSONEncoding.default).responseJSON(queue: queue) { response in
                 if response.result.isSuccess {
                     success(response.result.value as! Dictionary)
                 }else{
                     fail(response.result.error)
-                }
+            }
                 semaphore.signal()
             }
             semaphore.wait()
         } else {
+            print("getgayobareta")
             Alamofire.request(url, method: method, parameters: parameters).responseJSON(queue: queue) { response in
                 if response.result.isSuccess {
                     success(response.result.value as! Dictionary)

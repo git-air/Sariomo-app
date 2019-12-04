@@ -30,6 +30,8 @@ class DetailTankaShowViewController: UIViewController {
     var date4 = ""
     var date5 = ""
     
+    // var json: JSON!
+    
     var t: Tankalist!
     
     @IBOutlet weak var tankaView: UIView!
@@ -61,7 +63,7 @@ class DetailTankaShowViewController: UIViewController {
         
         tankaLabel.text = t.phrase["1"]!
         
-        user1Label.text = String(t.userid["1"]!)
+        user1Label.text = userName(userid: t.userid["1"]!)
         user2Label.text = String(t.userid["2"]!)
         user3Label.text = String(t.userid["3"]!)
         user4Label.text = String(t.userid["4"]!)
@@ -73,6 +75,8 @@ class DetailTankaShowViewController: UIViewController {
         date4Label.text = t.date["4"]!
         date5Label.text = t.date["5"]!
         
+//        userName(userid: t.userid["1"]!)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -83,20 +87,29 @@ class DetailTankaShowViewController: UIViewController {
     func userName(userid: Int) -> String{
         var username: String = ""
         let parameter = [
-            "body": [
                 "userid": userid
-            ]
         ]
-        var json: JSON
-//        let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
-//        api.request(success: { (date:Any) in
-//            json = JSON(date)
-//        }, fail: {(error: Error?) in
-//            print(error!)
-//        })
-//        username = json["username"].string!
+        var json: JSON!
+        // var json: JSON!
+        let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
+        print("aaaaaaaaaaaaaaaaaaaa")
+        api.request(success: {(data: Any) in
+            print("aiueo: \(data)")
+            json = JSON(data)
+            // print(json)
+            // self.a(data: data)
+        }, fail: {(error: Error?) in
+            print(error!)
+        })
+        // print(json!)
+        username = json["username"].string!
         return username
     }
+    
+//    func a(data: Dictionary<String, Any>) -> JSON{
+//        json = JSON(data)
+//        return json
+//    }
     
     
     

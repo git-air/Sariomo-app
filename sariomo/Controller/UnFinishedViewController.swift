@@ -20,6 +20,8 @@ class UnFinishedViewController: UIViewController {
     
     var json: JSON = []
     
+    var users:[String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,6 +45,37 @@ class UnFinishedViewController: UIViewController {
         }, fail: {(error: Error?) in
             print(error!)
         })
+        
+    }
+    
+    func test() -> String{
+        let dispatchGroup = DispatchGroup()
+        let dispatchQueue = DispatchQueue(label: "queue", attributes: .concurrent)
+        
+        let parameter = [
+                "userid": 9999
+        ]
+        
+        var aiu: JSON!
+        var username = ""
+        dispatchGroup.enter()
+        dispatchQueue.async(group: dispatchGroup) {
+            let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
+            api.request(success: {(data: Any) in
+                aiu = JSON(data)
+            }, fail: {(error: Error?) in
+                print(error!)
+            })
+            dispatchGroup.leave()
+        }
+        dispatchGroup.notify(queue: .main) {
+            // username = aiu["username"].string!
+            // self.userLabel.text = aiu["username"].string!
+            print("All Process Done!")
+        }
+        return username
+        // username = aiu["username"].string!
+        
     }
     
     func a(data: Dictionary<String, Any>) -> [Tankalist] {
@@ -64,6 +97,7 @@ class UnFinishedViewController: UIViewController {
             let wordcolor: String = json["tankalist"][i]["wordcolor"].string!
             
             let t = Tankalist(tankaid: tankaid, sectionid: sectionid, phrase: phrase, userid: userid, date: date, taglist: taglist, background: background, wordcolor: wordcolor)
+            // t.date["1"] = test()
             a.append(t)
         }
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
@@ -112,6 +146,7 @@ extension UnFinishedViewController: UITableViewDataSource {
         
         print("indexPath.row: \(indexPath.row)")
         
+        let text = self.test()
         cell.fill(tanka: tankaTes[indexPath.row], a: indexPath.row)
         
         cell.detailButton.tag = indexPath.row
