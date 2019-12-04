@@ -103,26 +103,26 @@ class DetailTankaViewController: UIViewController {
 //        // textColorView.isHidden = false
 //    }
     
-    @IBAction func postTanka(_ sender: Any) {
-        let parameter: [String: Any] = [
-            "sectionid": 1,
-            "where": 1,
-            "phrase": "サリチル酸サリチル酸",
-            "user": 1110,
-            "date": "20191127",
-            "background": "FFFFFF",
-            "wordcolor": "000000"
-        ]
-        let api = ApiManager(host: "***REMOVED***", path: "/addPhrase", method: .post, parameters: parameter)
-        
-        api.request(success: {(data:Any) in
-            print("success")
-            print(data)
-        }, fail: {(error: Error?) in
-            print("fail")
-            print(error!)
-        })
-    }
+//    @IBAction func postTanka(_ sender: Any) {
+//        let parameter: [String: Any] = [
+//            "sectionid": 1,
+//            "where": 1,
+//            "phrase": "サリチル酸サリチル酸",
+//            "user": 1110,
+//            "date": "20191127",
+//            "background": "FFFFFF",
+//            "wordcolor": "000000"
+//        ]
+//        let api = ApiManager(host: "***REMOVED***", path: "/addPhrase", method: .post, parameters: parameter)
+//        
+//        api.request(success: {(data:Any) in
+//            print("success")
+//            print(data)
+//        }, fail: {(error: Error?) in
+//            print("fail")
+//            print(error!)
+//        })
+//    }
     
     @IBAction func textColorButton(_ sender: Any) {
         textColorPaletteView.isHidden = false

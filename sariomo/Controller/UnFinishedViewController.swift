@@ -8,14 +8,13 @@
 
 import UIKit
 import SwiftyJSON
+import SkeletonView
 
 class UnFinishedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var detailButton: UIButton!
-    
-    var tankas: [Tanka] = []
+    // var tankas: [Tanka] = []
     var tankaTes: [Tankalist] = []
     
     var json: JSON = []
@@ -28,12 +27,13 @@ class UnFinishedViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        //        tableView.isSkeletonable = true
+        
         unFinishedTanka()
         
         tableView.reloadData()
         
     }
-    
     
     
     func unFinishedTanka() {
@@ -48,35 +48,33 @@ class UnFinishedViewController: UIViewController {
         
     }
     
-    func test() -> String{
-        let dispatchGroup = DispatchGroup()
-        let dispatchQueue = DispatchQueue(label: "queue", attributes: .concurrent)
-        
-        let parameter = [
-                "userid": 9999
-        ]
-        
-        var aiu: JSON!
-        var username = ""
-        dispatchGroup.enter()
-        dispatchQueue.async(group: dispatchGroup) {
-            let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
-            api.request(success: {(data: Any) in
-                aiu = JSON(data)
-            }, fail: {(error: Error?) in
-                print(error!)
-            })
-            dispatchGroup.leave()
-        }
-        dispatchGroup.notify(queue: .main) {
-            // username = aiu["username"].string!
-            // self.userLabel.text = aiu["username"].string!
-            print("All Process Done!")
-        }
-        return username
-        // username = aiu["username"].string!
-        
-    }
+//    func test() -> String{
+//        let dispatchGroup = DispatchGroup()
+//        let dispatchQueue = DispatchQueue(label: "queue", attributes: .concurrent)
+//
+//        let parameter = [
+//            "userid": 9999
+//        ]
+//
+//        dispatchGroup.enter()
+//        dispatchQueue.async(group: dispatchGroup) {
+//            let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
+//            api.request(success: {(data: Any) in
+//                aiu = JSON(data)
+//            }, fail: {(error: Error?) in
+//                print(error!)
+//            })
+//            dispatchGroup.leave()
+//        }
+//        dispatchGroup.notify(queue: .main) {
+//            // username = aiu["username"].string!
+//            // self.userLabel.text = aiu["username"].string!
+//            print("All Process Done!")
+//        }
+//        return username
+//        // username = aiu["username"].string!
+//
+//    }
     
     func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
@@ -84,7 +82,7 @@ class UnFinishedViewController: UIViewController {
         
         var a: [Tankalist] = []
         
-        for i in 0...2 {
+        for i in 0...1 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             
@@ -146,8 +144,12 @@ extension UnFinishedViewController: UITableViewDataSource {
         
         print("indexPath.row: \(indexPath.row)")
         
-        let text = self.test()
-        cell.fill(tanka: tankaTes[indexPath.row], a: indexPath.row)
+        // let text = self.test()
+        
+        
+        cell.fill(tanka: self.tankaTes[indexPath.row], a: indexPath.row)
+        
+        
         
         cell.detailButton.tag = indexPath.row
         
