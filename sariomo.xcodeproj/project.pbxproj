@@ -30,6 +30,9 @@
 		454CF7132375344A008352AD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7122375344A008352AD /* SearchViewController.swift */; };
 		454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7172375BCD8008352AD /* UnFinishedViewController.swift */; };
 		454CF71A2375BCFC008352AD /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CF7192375BCFC008352AD /* FinishedViewController.swift */; };
+		455DA9DA239769F60016215D /* DetailFollowTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455DA9D9239769F60016215D /* DetailFollowTankaViewController.swift */; };
+		455DA9DC23976D7D0016215D /* FollowTankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455DA9DB23976D7D0016215D /* FollowTankaTableViewCell.swift */; };
+		455DA9DE23977BAB0016215D /* SelectTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455DA9DD23977BAB0016215D /* SelectTagViewController.swift */; };
 		455E2E752366BAB900E4C7F8 /* TankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455E2E742366BAB900E4C7F8 /* TankaViewController.swift */; };
 		45715E9C237BF3FC00F56E62 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9B237BF3FC00F56E62 /* ApiManager.swift */; };
 		45715E9E237BF5E100F56E62 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45715E9D237BF5E100F56E62 /* MyPageViewController.swift */; };
@@ -103,6 +106,9 @@
 		454CF7122375344A008352AD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		454CF7172375BCD8008352AD /* UnFinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnFinishedViewController.swift; sourceTree = "<group>"; };
 		454CF7192375BCFC008352AD /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
+		455DA9D9239769F60016215D /* DetailFollowTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFollowTankaViewController.swift; sourceTree = "<group>"; };
+		455DA9DB23976D7D0016215D /* FollowTankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTankaTableViewCell.swift; sourceTree = "<group>"; };
+		455DA9DD23977BAB0016215D /* SelectTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewController.swift; sourceTree = "<group>"; };
 		455E2E742366BAB900E4C7F8 /* TankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TankaViewController.swift; path = sariomo/Controller/TankaViewController.swift; sourceTree = SOURCE_ROOT; };
 		45715E9B237BF3FC00F56E62 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		45715E9D237BF5E100F56E62 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +213,7 @@
 				45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */,
 				453D83B62390B59500FBECBF /* CustomButton.swift */,
 				4594F1DB2396BA620087F18B /* MyCustomData.swift */,
+				455DA9DB23976D7D0016215D /* FollowTankaTableViewCell.swift */,
 			);
 			path = sariomo;
 			sourceTree = "<group>";
@@ -278,6 +285,8 @@
 				45747697238E475E008AAB02 /* BeaconViewController.swift */,
 				4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */,
 				4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */,
+				455DA9D9239769F60016215D /* DetailFollowTankaViewController.swift */,
+				455DA9DD23977BAB0016215D /* SelectTagViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -584,9 +593,12 @@
 			files = (
 				45FC1945238D613B00F9E96E /* TankaParser.swift in Sources */,
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
+				455DA9DC23976D7D0016215D /* FollowTankaTableViewCell.swift in Sources */,
+				455DA9DA239769F60016215D /* DetailFollowTankaViewController.swift in Sources */,
 				454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */,
 				454CF7132375344A008352AD /* SearchViewController.swift in Sources */,
 				453D83B72390B59500FBECBF /* CustomButton.swift in Sources */,
+				455DA9DE23977BAB0016215D /* SelectTagViewController.swift in Sources */,
 				45747698238E475E008AAB02 /* BeaconViewController.swift in Sources */,
 				4578CD91238DFB8900BC8609 /* RegistrationViewController.swift in Sources */,
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,

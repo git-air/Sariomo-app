@@ -11,137 +11,105 @@ import SwiftyJSON
 
 class FollowViewController: UIViewController {
     
-    var theScrollView: UIScrollView = {
-        let v = UIScrollView()
-        v.translatesAutoresizingMaskIntoConstraints = false
-        // v.backgroundColor = .gray
-        return v
-    }()
+    @IBOutlet weak var tableView: UITableView!
     
-    var theStackView: UIStackView = {
-        let v = UIStackView()
-        v.translatesAutoresizingMaskIntoConstraints = false
-        v.axis = .vertical
-        v.alignment = .leading
-        v.distribution = .fillProportionally
-        v.spacing = 600.0
-        return v
-    }()
+    var tankas: [Tankalist] = []
     
-    var tanka2: [String] = [String](repeating: "", count: 50)
+    var json: JSON = []
     
-    var tanka: [String] = ["""
-賑やかな
-踊り楽しむ
-夏祭り
-終わりが近づく
-また来年ね
-""",
-                           """
-海外の
-声が飛び交う
-街並みに
-はなしわからぬ
-翻訳起動
-""",
-                           """
-もみじ舞う
-山を脇目に
-秋刀魚焼く
-香りに誘われ
-秋に近づく
-""",
-                           """
-test
-"""
-    ]
+    var users: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        test()
-        layout()
         
-        createXib()
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        followTanka()
+        
+        tableView.reloadData()
         
     }
     
-    func time() -> String {
-        let dt = Date()
-        let dateFormatter = DateFormatter()
-        
-        // DateFormatter を使用して書式とロケールを指定する
-        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyyMMdd", options: 0, locale: Locale(identifier: "ja_JP"))
-        
-        return dateFormatter.string(from: dt)
+    func followTanka() {
+        let api = ApiManager(path: "/timeline")
+        api.request(success: {(data: Dictionary) in
+            self.tankas = self.a(data: data)
+        }, fail: {(error: Error?) in
+            print(error!)
+        })
     }
     
-    func test() {
-        let tankaApi = ApiManager(path: "/timeline")
-        tankaApi.request(success: { (data: Dictionary) in self.json(data: data) }, fail: { (error: Error?) in print(error!)})
-    }
-    
-    func json(data: Dictionary<String, Any>){
+    func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
+        print(json)
         
-        var u = [String](repeating: "a", count: 50)
+        var a: [Tankalist] = []
         
-        for i in 0...2 {
-            var a = ""
-            for j in 1...5 {
-                let phrase = json["tankalist"][i]["phrase"]["\(j)"].string! + "\n"
-                // print(phrase)
-                a.append(phrase)
-            }
-            u[i] = a
-            print("@@@@@@@@@@@@@")
-            print(a)
+        for i in 0...3 {
+            let tankaid: Int = json["tankalist"][i]["tankaid"].int!
+            print(tankaid)
+            
+            let sectionid: Int = json["tankalist"][i]["sectionid"].int!
+            let phrase: [String: String] = json["tankalist"][i]["phrase"].dictionaryObject as! [String: String]
+            let userid: [String: Int] = json["tankalist"][i]["userid"].dictionaryObject as! [String: Int]
+            let date: [String: String] = json["tankalist"][i]["date"].dictionaryObject as! [String: String]
+            let taglist: [String] = json["tankalist"][i]["taglist"].arrayObject as! [String]
+            let background: String = json["tankalist"][i]["background"].string!
+            let wordcolor: String = json["tankalist"][i]["wordcolor"].string!
+            
+            let t = Tankalist(tankaid: tankaid, sectionid: sectionid, phrase: phrase, userid: userid, date: date, taglist: taglist, background: background, wordcolor: wordcolor)
+            // t.date["1"] = test()
+            a.append(t)
         }
-        print(u)
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        print(a)
+        return a
     }
     
-    
-    func layout() {
-        view.addSubview(theScrollView)
-        
-        NSLayoutConstraint.activate([
-            theScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10.0),
-            theScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0.0),
-            theScrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10.0),
-            theScrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10.0),
-            // theScrollView.heightAnchor.constraint(equalToConstant: 3000.0)
-        ])
-        
-        theScrollView.addSubview(theStackView)
-        
-        NSLayoutConstraint.activate([
-            theStackView.topAnchor.constraint(equalTo: theScrollView.topAnchor, constant: 10.0),
-            theStackView.bottomAnchor.constraint(equalTo: theScrollView.bottomAnchor, constant: -10.0),
-            theStackView.leadingAnchor.constraint(equalTo: theScrollView.leadingAnchor, constant: 0.0),
-            theStackView.trailingAnchor.constraint(equalTo: theScrollView.trailingAnchor, constant: 0.0),
-            
-            // stackView width = scrollView width -40 (20-pts padding on left & right
-            theStackView.widthAnchor.constraint(equalTo: theScrollView.widthAnchor, constant: 0.0),
-        ])
-    }
-    
-    func createXib() {
-        for i in 0..<3 {
-            let v = UIView.fromNib() as TestXibView
-            
-            // v.translatesAutoresizingMaskIntoConstraints = false
-            
-            v.tankaLabel?.numberOfLines = 0;
-            v.tankaLabel?.text = tanka2[i]
-            v.timeLabel?.text = time()
-            v.authorLabel?.text = "User\(i)"
-            
-            v.imageView.image = UIImage(named: "shiden\(i)")
-            // v.imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 400)
-            v.imageView.contentMode = .scaleAspectFill
-            v.imageView.clipsToBounds = true
-            
-            theStackView.addArrangedSubview(v)
-        }
+    @IBAction func toDetailTanka(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let second = storyboard.instantiateViewController(withIdentifier: "DetailFollowTankaViewController") as! DetailFollowTankaViewController
+        second.t = tankas[sender.tag]
+        self.present(second, animated: true, completion: nil)
+        print(tankas[0].phrase)
+        print("aaaaa")
+        print(sender.tag)
     }
     
 }
+
+extension FollowViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // tableView.deselectRow(at: indexPath, animated: true)
+        print("セルをタップ")
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 500
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
+
+extension FollowViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tankas.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "FollowTankaTableViewCell") as! FollowTankaTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FollowTankaTableViewCell") as! FollowTankaTableViewCell
+        print("indexPath.row: \(indexPath.row)")
+        
+        cell.fill(tanka: self.tankas[indexPath.row], a: indexPath.row)
+        cell.detailButton.tag = indexPath.row
+        
+        return cell
+    }
+}
+

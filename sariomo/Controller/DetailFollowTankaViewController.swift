@@ -1,5 +1,5 @@
 //
-//  DetailTankaShowViewController.swift
+//  DetailFollowTankaViewController.swift
 //  sariomo
 //
 //  Created by AIRU ISHIKURA on 2019/12/04.
@@ -9,10 +9,10 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import SkeletonView
 
+class DetailFollowTankaViewController: UIViewController {
 
-class DetailTankaShowViewController: UIViewController {
-    
     var tanka = ""
     
     var backgroundColor = ""
@@ -33,7 +33,7 @@ class DetailTankaShowViewController: UIViewController {
     var date5 = ""
     
     var t: Tankalist!
-    
+
     @IBOutlet weak var tankaView: UIView!
     
     @IBOutlet weak var tankaLabel: UILabel!
@@ -55,7 +55,7 @@ class DetailTankaShowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tankaView.showAnimatedSkeleton()
         tankaLabel.showAnimatedSkeleton()
         
@@ -73,9 +73,8 @@ class DetailTankaShowViewController: UIViewController {
         date3Label.showAnimatedSkeleton()
         date4Label.showAnimatedSkeleton()
         date5Label.showAnimatedSkeleton()
-
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(5)) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
             self.tankaView.hideSkeleton()
             self.tankaLabel.hideSkeleton()
             
@@ -95,8 +94,8 @@ class DetailTankaShowViewController: UIViewController {
             self.date5Label.hideSkeleton()
             
             // self.backgroundColor = self.t.background
-//            self.tankaView.backgroundColor = MyColor(hex: self.t.background)
-            self.tankaView.backgroundColor = MyColor(hex: "c9f6ff")
+            // self.tankaView.backgroundColor = MyColor(hex: self.t.background)
+            self.tankaView.backgroundColor = MyColor(hex: "ffaeae")
             
             self.tankaLabel.text = self.t.phrase["1"]! + "\n" + self.t.phrase["2"]! + "\n" + self.t.phrase["3"]! + "\n" + self.t.phrase["4"]! + "\n" + self.t.phrase["5"]!
             
@@ -113,10 +112,6 @@ class DetailTankaShowViewController: UIViewController {
             self.date4Label.text = self.t.date["4"]!
             self.date5Label.text = self.t.date["5"]!
         }
-        
-        //        userName(userid: t.userid["1"]!)
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func back(_ sender: Any) {
@@ -137,6 +132,5 @@ class DetailTankaShowViewController: UIViewController {
             print(error!)
         })
     }
-    
-    
+
 }

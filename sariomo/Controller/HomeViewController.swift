@@ -25,7 +25,7 @@ class HomeViewController: TabmanViewController {
         bar.layout.contentMode = .fit
         
         // Zeplinバージョン
-        // bar.layout.alignment = .center
+        bar.layout.alignment = .center
         
         bar.layout.separatorColor = MyColor.tomato
         bar.indicator.tintColor = MyColor.tomato

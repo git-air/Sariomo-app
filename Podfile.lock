@@ -3,6 +3,7 @@ PODS:
   - AutoInsetter (1.8.0)
   - Nantes (0.0.8)
   - Pageboy (3.5.0)
+  - SkeletonView (1.8.2)
   - SwiftyGif (5.2.0)
   - SwiftyJSON (5.0.0)
   - Tabman (2.6.3):
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (< 5.0)
   - Nantes
+  - SkeletonView
   - SwiftyGif
   - SwiftyJSON
   - Tabman
@@ -22,6 +24,7 @@ SPEC REPOS:
     - AutoInsetter
     - Nantes
     - Pageboy
+    - SkeletonView
     - SwiftyGif
     - SwiftyJSON
     - Tabman
@@ -31,10 +34,11 @@ SPEC CHECKSUMS:
   AutoInsetter: 0b90ca74e36561c340129045a3722c51a0b15c58
   Nantes: 94a2e0c0b8207f12694f4ff6d96bf670adad3e27
   Pageboy: 3794c578aae5fcce06e90b3ed4a0ad6b807d75bb
+  SkeletonView: bb27c39857e5492136f02ee8a3aa78de55d12ecd
   SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Tabman: 63eae331ae7a9388ae389b1808f1939269fcdece
 
-PODFILE CHECKSUM: 9a6c313cf98d8e2ccbbfdbc85f17493cac28060c
+PODFILE CHECKSUM: c394a9f016eedb4563258b23bb6977137758911f
 
 COCOAPODS: 1.8.3

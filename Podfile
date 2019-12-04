@@ -8,6 +8,7 @@ target 'sariomo' do
   pod 'SwiftyJSON'
   pod 'Tabman'
   pod 'Nantes'
+  pod 'SkeletonView'
 # source 'https://github.com/CocoaPods/Specs.git'
   pod 'SwiftyGif'
 
