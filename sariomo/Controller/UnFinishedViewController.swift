@@ -14,6 +14,7 @@ class UnFinishedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private let refreshControl = UIRefreshControl()
     // var tankas: [Tanka] = []
     var tankaTes: [Tankalist] = []
     
@@ -31,8 +32,25 @@ class UnFinishedViewController: UIViewController {
         
         unFinishedTanka()
         
+        tableView.refreshControl = refreshControl
+        tableView.refreshControl?.addTarget(self, action:
+            #selector(handleRefreshControl),
+                                            for: .valueChanged)
+        
         tableView.reloadData()
         
+    }
+    
+    @objc func handleRefreshControl() {
+        // Update your content…
+        
+        unFinishedTanka()
+        tableView.reloadData()
+        
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.tableView.refreshControl?.endRefreshing()
+        }
     }
     
     

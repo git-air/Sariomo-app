@@ -20,6 +20,9 @@ class FinishedTankaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var finishedDetailLabel: UIButton!
     
+    @IBOutlet weak var detailButton: CustomButton!
+    
+    
     var json:JSON = []
     
     func fill(tanka: Tankalist, a: Int) {

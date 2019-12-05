@@ -46,6 +46,7 @@
 		4594F1DC2396BA620087F18B /* MyCustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594F1DB2396BA620087F18B /* MyCustomData.swift */; };
 		4594F1DE2396D1D10087F18B /* DetailTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */; };
 		4594F1E02396D35B0087F18B /* DetailTankaShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */; };
+		45A07D4D23993154001CCC85 /* DetailFinishedTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A07D4C23993154001CCC85 /* DetailFinishedTankaViewController.swift */; };
 		45A50910238CB69E00336D23 /* Tanka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5090F238CB69E00336D23 /* Tanka.swift */; };
 		45DBBA562369887800EDC8D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBBA552369887800EDC8D5 /* Home.storyboard */; };
 		45F0CEEF238DA93D00DA158F /* FinishedTankaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */; };
@@ -122,6 +123,7 @@
 		4594F1DB2396BA620087F18B /* MyCustomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomData.swift; sourceTree = "<group>"; };
 		4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTankaViewController.swift; sourceTree = "<group>"; };
 		4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTankaShowViewController.swift; sourceTree = "<group>"; };
+		45A07D4C23993154001CCC85 /* DetailFinishedTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFinishedTankaViewController.swift; sourceTree = "<group>"; };
 		45A5090F238CB69E00336D23 /* Tanka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanka.swift; sourceTree = "<group>"; };
 		45DBBA552369887800EDC8D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		45F0CEEE238DA93D00DA158F /* FinishedTankaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTankaTableViewCell.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				4594F1DD2396D1D10087F18B /* DetailTankaViewController.swift */,
 				4594F1DF2396D35B0087F18B /* DetailTankaShowViewController.swift */,
 				455DA9DD23977BAB0016215D /* SelectTagViewController.swift */,
+				45A07D4C23993154001CCC85 /* DetailFinishedTankaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				4508C6022364E0AB00A6D11F /* SariomoColor.swift in Sources */,
 				45FC1941238CC01F00F9E96E /* TankaTableViewCell.swift in Sources */,
 				451B445C236C126F0086666A /* TestXibView.swift in Sources */,
+				45A07D4D23993154001CCC85 /* DetailFinishedTankaViewController.swift in Sources */,
 				4594F1DE2396D1D10087F18B /* DetailTankaViewController.swift in Sources */,
 				4578CD86238DBC6600BC8609 /* FirstTankaViewController.swift in Sources */,
 				4594F1E02396D35B0087F18B /* DetailTankaShowViewController.swift in Sources */,
