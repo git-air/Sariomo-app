@@ -84,6 +84,9 @@ class FollowViewController: UIViewController {
             // t.date["1"] = test()
             a.append(t)
         }
+        
+        a.shuffle()
+        
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         print(a)
         return a

@@ -78,7 +78,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zb-Gw-tk0" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                                    <rect key="frame" x="33" y="516" width="133" height="34"/>
+                                                    <rect key="frame" x="33" y="537" width="133" height="34"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="133" id="PMi-7A-d5i"/>
@@ -103,7 +103,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOJ-i0-bGr" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                                    <rect key="frame" x="208" y="516" width="133" height="34"/>
+                                                    <rect key="frame" x="208" y="537" width="133" height="34"/>
                                                     <state key="normal" title="続きを詠む">
                                                         <color key="titleColor" name="tomato"/>
                                                     </state>
@@ -125,8 +125,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="05v-7N-sRg" firstAttribute="leading" secondItem="hE9-23-AhH" secondAttribute="leadingMargin" constant="-15" id="7bp-g0-pB1"/>
-                                                <constraint firstItem="8zb-Gw-tk0" firstAttribute="top" secondItem="oYm-uS-x68" secondAttribute="bottom" constant="18" id="9gp-zr-TS5"/>
-                                                <constraint firstAttribute="bottom" secondItem="8zb-Gw-tk0" secondAttribute="bottom" constant="95" id="DRS-0Z-rcy"/>
+                                                <constraint firstItem="8zb-Gw-tk0" firstAttribute="top" secondItem="oYm-uS-x68" secondAttribute="bottom" constant="39" id="9gp-zr-TS5"/>
+                                                <constraint firstAttribute="bottom" secondItem="8zb-Gw-tk0" secondAttribute="bottom" constant="74" id="DRS-0Z-rcy"/>
                                                 <constraint firstItem="oYm-uS-x68" firstAttribute="leading" secondItem="hE9-23-AhH" secondAttribute="leadingMargin" constant="30" id="HzO-CV-G17"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="EOJ-i0-bGr" secondAttribute="trailing" constant="19" id="JEi-Yf-tdU"/>
                                                 <constraint firstItem="05v-7N-sRg" firstAttribute="centerX" secondItem="hE9-23-AhH" secondAttribute="centerX" id="Kkn-hD-Eqj"/>
@@ -433,7 +433,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-BO-qaA">
-                                <rect key="frame" x="0.0" y="53" width="375" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TankaTableViewCell" rowHeight="645" id="xxt-bY-Wgy" customClass="TankaTableViewCell" customModule="sariomo" customModuleProvider="target">
@@ -554,7 +554,7 @@
                         <constraints>
                             <constraint firstItem="XdS-Jr-5zS" firstAttribute="bottom" secondItem="5tg-BO-qaA" secondAttribute="bottom" id="H2g-Gi-Unf"/>
                             <constraint firstItem="5tg-BO-qaA" firstAttribute="leading" secondItem="XdS-Jr-5zS" secondAttribute="leading" id="QBR-nE-wcv"/>
-                            <constraint firstItem="5tg-BO-qaA" firstAttribute="top" secondItem="XdS-Jr-5zS" secondAttribute="top" constant="9" id="XWQ-4h-Jou"/>
+                            <constraint firstItem="5tg-BO-qaA" firstAttribute="top" secondItem="XdS-Jr-5zS" secondAttribute="top" constant="-44" id="XWQ-4h-Jou"/>
                             <constraint firstItem="XdS-Jr-5zS" firstAttribute="trailing" secondItem="5tg-BO-qaA" secondAttribute="trailing" id="axV-zm-4Xa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XdS-Jr-5zS"/>

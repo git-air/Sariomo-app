@@ -85,6 +85,7 @@ class FinishedViewController: UIViewController {
             let t = Tankalist(tankaid: tankaid, sectionid: sectionid, phrase: phrase, userid: userid, date: date, taglist: taglist, background: background, wordcolor: wordcolor)
             a.append(t)
         }
+        a.shuffle()
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         print(a)
         return a
