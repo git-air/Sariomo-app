@@ -97,6 +97,14 @@ class FollowViewController: UIViewController {
         print(sender.tag)
     }
     
+    @IBAction func readContinuationTanka(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let next = storyboard.instantiateViewController(withIdentifier: "ReadContinuationFollowTankaViewController") as! ReadContinuationFollowTankaViewController
+        next.t = tankas[sender.tag]
+        self.present(next, animated:  true, completion: nil)
+    }
+    
+    
 }
 
 extension FollowViewController: UITableViewDelegate {

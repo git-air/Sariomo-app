@@ -12,6 +12,7 @@
 		4508C6062364E94000A6D11F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C6052364E94000A6D11F /* TabBarViewController.swift */; };
 		451B445C236C126F0086666A /* TestXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B445B236C126F0086666A /* TestXibView.swift */; };
 		451B445E236C12850086666A /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451B445D236C12850086666A /* TestXibView.xib */; };
+		452A6401239942B2009C7C9E /* ReadContinuationFollowTankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6400239942B2009C7C9E /* ReadContinuationFollowTankaViewController.swift */; };
 		4534AED32364CB98006E89EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED22364CB98006E89EB /* AppDelegate.swift */; };
 		4534AED52364CB98006E89EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED42364CB98006E89EB /* SceneDelegate.swift */; };
 		4534AED72364CB98006E89EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534AED62364CB98006E89EB /* ViewController.swift */; };
@@ -82,6 +83,7 @@
 		4508C6052364E94000A6D11F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		451B445B236C126F0086666A /* TestXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibView.swift; sourceTree = "<group>"; };
 		451B445D236C12850086666A /* TestXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
+		452A6400239942B2009C7C9E /* ReadContinuationFollowTankaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadContinuationFollowTankaViewController.swift; sourceTree = "<group>"; };
 		4534AECF2364CB98006E89EB /* sariomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sariomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534AED22364CB98006E89EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4534AED42364CB98006E89EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				454CF7122375344A008352AD /* SearchViewController.swift */,
 				45FC193E238CB8B200F9E96E /* FollowViewController.swift */,
 				455DA9D9239769F60016215D /* DetailFollowTankaViewController.swift */,
+				452A6400239942B2009C7C9E /* ReadContinuationFollowTankaViewController.swift */,
 				454CF7172375BCD8008352AD /* UnFinishedViewController.swift */,
 				454CF7192375BCFC008352AD /* FinishedViewController.swift */,
 				45715E9D237BF5E100F56E62 /* MyPageViewController.swift */,
@@ -593,6 +596,7 @@
 				45FC1945238D613B00F9E96E /* TankaParser.swift in Sources */,
 				4534AED72364CB98006E89EB /* ViewController.swift in Sources */,
 				455DA9DC23976D7D0016215D /* FollowTankaTableViewCell.swift in Sources */,
+				452A6401239942B2009C7C9E /* ReadContinuationFollowTankaViewController.swift in Sources */,
 				455DA9DA239769F60016215D /* DetailFollowTankaViewController.swift in Sources */,
 				454CF7182375BCD8008352AD /* UnFinishedViewController.swift in Sources */,
 				454CF7132375344A008352AD /* SearchViewController.swift in Sources */,
