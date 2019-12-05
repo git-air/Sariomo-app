@@ -96,7 +96,7 @@ class DetailTankaShowViewController: UIViewController {
             
             // self.backgroundColor = self.t.background
 //            self.tankaView.backgroundColor = MyColor(hex: self.t.background)
-            self.tankaView.backgroundColor = MyColor(hex: "c9f6ff")
+            self.tankaView.backgroundColor = MyColor(hex: self.t.background)
             
             self.tankaLabel.text = self.t.phrase["1"]! + "\n" + self.t.phrase["2"]! + "\n" + self.t.phrase["3"]! + "\n" + self.t.phrase["4"]! + "\n" + self.t.phrase["5"]!
             

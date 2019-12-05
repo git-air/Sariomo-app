@@ -53,7 +53,12 @@ class FinishedTankaTableViewCell: UITableViewCell {
         print(i)
         
         for j in 1...5 {
-            let phrase = tanka.phrase["\(j)"]! + "\n"
+            var phrase: String = ""
+            if (j == 5){
+                phrase = tanka.phrase["\(j)"]!
+            } else {
+                phrase = tanka.phrase["\(j)"]! + "\n"
+            }
             // print(phrase)
             a.append(phrase)
         }

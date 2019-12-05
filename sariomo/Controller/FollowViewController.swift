@@ -62,11 +62,13 @@ class FollowViewController: UIViewController {
     
     func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
-        print(json)
+        let count = json["tankalist"].count
+        print("json[\"tankalist\"].count: \(json["tankalist"].count)")
+        print(type(of: count))
         
         var a: [Tankalist] = []
         
-        for i in 0...2 {
+        for i in 0...count-1 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             
