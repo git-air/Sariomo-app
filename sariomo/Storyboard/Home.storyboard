@@ -171,8 +171,16 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eF-5R-NOQ">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <navigationItem title="Title" id="JQN-rP-S1R"/>
+                                    <navigationItem title="続きを詠む" id="JQN-rP-S1R">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="oUi-U1-Ybm">
+                                            <color key="tintColor" name="warmGrey"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="G86-Ce-xbU">
+                                            <color key="tintColor" name="tomato"/>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -180,6 +188,9 @@
                         <viewLayoutGuide key="safeArea" id="sMm-Eo-Xgj"/>
                     </view>
                     <navigationItem key="navigationItem" id="3mw-gK-yO3"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="8eF-5R-NOQ" id="Qj7-CR-MpG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gF-jM-Z2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -852,6 +863,9 @@
         <image name="shiden3" width="900" height="675"/>
         <namedColor name="tomato">
             <color red="0.82700002193450928" green="0.2199999988079071" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="warmGrey">
+            <color red="0.43900001049041748" green="0.43900001049041748" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

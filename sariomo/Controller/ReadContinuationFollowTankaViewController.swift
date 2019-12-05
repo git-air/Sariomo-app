@@ -11,9 +11,14 @@ import UIKit
 class ReadContinuationFollowTankaViewController: UIViewController {
 
     var t: Tankalist!
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationBar.titleTextAttributes = [
+            .foregroundColor: MyColor.brownishGrey
+        ]
 
 
         // Do any additional setup after loading the view.
