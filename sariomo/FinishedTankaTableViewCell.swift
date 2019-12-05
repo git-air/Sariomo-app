@@ -12,7 +12,8 @@ import SwiftyJSON
 
 class FinishedTankaTableViewCell: UITableViewCell {
         
-    @IBOutlet weak var finishedPhotoImageView: UIImageView!
+    @IBOutlet weak var bgView: UIView!
+    
     
     @IBOutlet weak var finishedTankaLabel: UILabel!
     @IBOutlet weak var finishedDateLabel: UILabel!
@@ -26,8 +27,7 @@ class FinishedTankaTableViewCell: UITableViewCell {
     var json:JSON = []
     
     func fill(tanka: Tankalist, a: Int) {
-        finishedPhotoImageView.image = UIImage(named: "shiden1")
-        finishedPhotoImageView.alpha = 0.4
+        bgView.backgroundColor = MyColor(hex: tanka.background)
         
         finishedDateLabel.text = self.time()
         
@@ -53,7 +53,12 @@ class FinishedTankaTableViewCell: UITableViewCell {
         print(i)
         
         for j in 1...5 {
-            let phrase = tanka.phrase["\(j)"]! + "\n"
+            var phrase: String = ""
+            if (j == 5){
+                phrase = tanka.phrase["\(j)"]!
+            } else {
+                phrase = tanka.phrase["\(j)"]! + "\n"
+            }
             // print(phrase)
             a.append(phrase)
         }

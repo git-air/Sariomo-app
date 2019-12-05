@@ -96,11 +96,12 @@ class UnFinishedViewController: UIViewController {
     
     func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
+        let count = json["tankalist"].count
         print(json)
         
         var a: [Tankalist] = []
         
-        for i in 0...1 {
+        for i in 0...count-1 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             
@@ -116,6 +117,7 @@ class UnFinishedViewController: UIViewController {
             // t.date["1"] = test()
             a.append(t)
         }
+        a.shuffle()
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         print(a)
         return a
@@ -131,6 +133,14 @@ class UnFinishedViewController: UIViewController {
         print("aaaaa")
         print(sender.tag)
     }
+    
+    @IBAction func readContinuationUnfinishedTanka(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let next = storyboard.instantiateViewController(withIdentifier: "ReadContinuationUnFinishedTankaViewController") as! ReadContinuationUnFinishedTankaViewController
+        next.t = tankaTes[sender.tag]
+        self.present(next, animated:  true, completion: nil)
+    }
+    
     
     
 }
@@ -170,6 +180,7 @@ extension UnFinishedViewController: UITableViewDataSource {
         
         
         cell.detailButton.tag = indexPath.row
+        cell.readContinueButton.tag = indexPath.row
         
         
         

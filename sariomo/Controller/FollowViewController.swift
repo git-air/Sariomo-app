@@ -62,11 +62,13 @@ class FollowViewController: UIViewController {
     
     func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
-        print(json)
+        let count = json["tankalist"].count
+        print("json[\"tankalist\"].count: \(json["tankalist"].count)")
+        print(type(of: count))
         
         var a: [Tankalist] = []
         
-        for i in 0...2 {
+        for i in 0...count-1 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             
@@ -82,6 +84,9 @@ class FollowViewController: UIViewController {
             // t.date["1"] = test()
             a.append(t)
         }
+        
+        a.shuffle()
+        
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         print(a)
         return a
@@ -96,6 +101,14 @@ class FollowViewController: UIViewController {
         print("aaaaa")
         print(sender.tag)
     }
+    
+    @IBAction func readContinuationTanka(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let next = storyboard.instantiateViewController(withIdentifier: "ReadContinuationFollowTankaViewController") as! ReadContinuationFollowTankaViewController
+        next.t = tankas[sender.tag]
+        self.present(next, animated:  true, completion: nil)
+    }
+    
     
 }
 
@@ -128,6 +141,7 @@ extension FollowViewController: UITableViewDataSource {
         
         cell.fill(tanka: self.tankas[indexPath.row], a: indexPath.row)
         cell.detailButton.tag = indexPath.row
+        cell.readContinueButton.tag = indexPath.row
         
         return cell
     }
