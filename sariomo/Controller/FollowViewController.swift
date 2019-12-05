@@ -46,7 +46,7 @@ class FollowViewController: UIViewController {
         
         var a: [Tankalist] = []
         
-        for i in 0...3 {
+        for i in 0...2 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             

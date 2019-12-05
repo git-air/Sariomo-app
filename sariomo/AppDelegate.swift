@@ -22,15 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         
-        if(launchedBefore == true) {
-            UserDefaults.standard.set(false, forKey: "launchBefore")
-        } else {
-            UserDefaults.standard.set(true, forKey: "launchBefore")
-            
-            let registrationVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = registrationVC
-        }
+//        if(launchedBefore == true) {
+//            UserDefaults.standard.set(false, forKey: "launchBefore")
+//        } else {
+//            UserDefaults.standard.set(true, forKey: "launchBefore")
+//            
+//            let registrationVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            self.window?.rootViewController = registrationVC
+//        }
         
         return true
     }

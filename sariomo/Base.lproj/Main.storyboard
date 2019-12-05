@@ -12,7 +12,7 @@
         <scene sceneID="ihP-3B-Mpa">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="L6B-t2-ttQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="OzB-H3-e5B"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Home" landscapeImage="Home" id="OzB-H3-e5B"/>
                     <navigationItem key="navigationItem" id="v9M-nf-E7G"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oh9-k1-7Ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,7 +46,7 @@
         <scene sceneID="qNo-YZ-PYK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Search" id="Z8e-TJ-hf4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eZF-n4-MIg"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" landscapeImage="Search" id="eZF-n4-MIg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6Z-Ky-br9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,8 +55,8 @@
         <!--Tanka-->
         <scene sceneID="6Ro-jE-5TZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Tanka" id="9nY-0E-iRk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rPr-QC-pbE"/>
+                <viewControllerPlaceholder storyboardIdentifier="toTanka" storyboardName="Tanka" id="9nY-0E-iRk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tanka" image="Tanka" landscapeImage="Tanka" largeContentSizeImage="Tanka" selectedImage="Tanka" springLoaded="YES" id="rPr-QC-pbE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fl9-6s-eM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +66,7 @@
         <scene sceneID="ixC-zJ-IG5">
             <objects>
                 <viewControllerPlaceholder storyboardName="Notification" id="SzB-9f-tqo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2gz-NG-SS0"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Notification" landscapeImage="Notification" id="2gz-NG-SS0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9d-pM-hKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,7 @@
         <scene sceneID="ppW-mp-8Ez">
             <objects>
                 <viewControllerPlaceholder storyboardName="MyPage" id="LXc-4I-8BB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pKw-k1-CnM"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="user" landscapeImage="user" id="pKw-k1-CnM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okh-re-AHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,4 +130,11 @@
             <point key="canvasLocation" x="137.68115942028987" y="-607.36607142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home" width="24.333333969116211" height="25"/>
+        <image name="Notification" width="25" height="27"/>
+        <image name="Search" width="25" height="25"/>
+        <image name="Tanka" width="25" height="25"/>
+        <image name="user" width="25" height="25"/>
+    </resources>
 </document>

@@ -8,55 +8,12 @@
 
 import UIKit
 import SwiftyGif
-// import TGRFramework
 
 class BeaconViewController: UIViewController {
     
-    // var tgrClient: TGRClient?
-    let appId: String = "293"
-    let developerId: String = "89"
-    let serviceId: String = "1082454069"
-    let enableADID: Bool = true
-    let enableNotify: Bool = true
-    
-    var detectionBeaconView: DetectionBeaconView!
-    
-    var isFirstDetection = true
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.detectionBeaconView.doAnimation()
-        // startMonitor()
-    }
-    
-    func initView() {
-        self.detectionBeaconView = DetectionBeaconView.init(frame: self.view.frame)
-        self.view.addSubview(detectionBeaconView)
-    }
-    
-    func showDetectionBeaconView(_ bool: Bool) {
-        UIView.animate(withDuration: 0.6, animations: {
-            self.detectionBeaconView.alpha = bool ? 1 : 0
-        }, completion: { _ -> Void in
-            if !bool && self.isFirstDetection {
-                self.isFirstDetection = false
-            }
-            self.detectionBeaconView.animationBool = false
-        })
-    }
-    
-    @IBAction func tapToBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
-    
     
 }
 
