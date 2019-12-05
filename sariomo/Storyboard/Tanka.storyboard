@@ -1,260 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Llt-eD-5GF">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kIa-Zx-ZPI">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tanka-->
-        <scene sceneID="RNi-7u-ILf">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Llt-eD-5GF" customClass="TankaViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P6J-Jq-AR4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSc-Mo-r5j">
-                                <rect key="frame" x="165" y="58" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phrase1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgd-mb-gbY">
-                                <rect key="frame" x="62" y="96" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phrase2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVl-us-y1a">
-                                <rect key="frame" x="62" y="138" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phrase3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJi-pL-y85">
-                                <rect key="frame" x="62" y="180" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phrase4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDk-i3-c1y">
-                                <rect key="frame" x="62" y="222" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phrase5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24x-bS-ccN">
-                                <rect key="frame" x="62" y="264" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第1句" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCX-xn-Ahy" userLabel="phrase1">
-                                <rect key="frame" x="37" y="411" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第3句" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-Sr-9Re" userLabel="phrase3">
-                                <rect key="frame" x="38" y="528" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第4句" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SE6-GV-wTE" userLabel="phrase4">
-                                <rect key="frame" x="38" y="586" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第5句" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-aN-nzm" userLabel="phrase5">
-                                <rect key="frame" x="38" y="644" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkG-mD-xz9">
-                                <rect key="frame" x="149" y="326" width="78" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="投稿"/>
-                                <connections>
-                                    <action selector="postTap:" destination="Llt-eD-5GF" eventType="touchUpInside" id="TxX-Tq-bKp"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer" translatesAutoresizingMaskIntoConstraints="NO" id="qqc-97-Bj5">
-                                <rect key="frame" x="62" y="394" width="250" height="298"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第2句" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybs-L0-nbr" userLabel="phrase2">
-                                <rect key="frame" x="38" y="467" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moa-av-GbB">
-                                <rect key="frame" x="266" y="333" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="ajn-MO-7tU" kind="presentation" modalPresentationStyle="fullScreen" id="AfA-E8-Qud"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Pvg-fH-zYo"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Tanka" image="Tanka" id="0ER-ta-BhI"/>
-                    <navigationItem key="navigationItem" id="Vmu-yr-gmQ"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="phrase1Label" destination="oCX-xn-Ahy" id="pew-QQ-NIq"/>
-                        <outlet property="phrase1TextField" destination="bgd-mb-gbY" id="JSp-zi-1wD"/>
-                        <outlet property="phrase2Label" destination="Ybs-L0-nbr" id="He3-Th-dIa"/>
-                        <outlet property="phrase2TextField" destination="JVl-us-y1a" id="3Ca-Y0-8Bp"/>
-                        <outlet property="phrase3Label" destination="Wdo-Sr-9Re" id="5CB-sq-ivW"/>
-                        <outlet property="phrase3TextField" destination="WJi-pL-y85" id="wrg-AK-zDH"/>
-                        <outlet property="phrase4Label" destination="SE6-GV-wTE" id="VZC-FU-rFu"/>
-                        <outlet property="phrase4TextField" destination="LDk-i3-c1y" id="IMi-oZ-Xfh"/>
-                        <outlet property="phrase5Label" destination="o0p-aN-nzm" id="bh5-LN-E0D"/>
-                        <outlet property="phrase5TextField" destination="24x-bS-ccN" id="hy8-Pk-nx9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5YS-Jb-bdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="142.61083743842366"/>
-        </scene>
-        <!--First Tanka View Controller-->
+        <!--Title-->
         <scene sceneID="OB6-Fs-rc9">
             <objects>
                 <viewController id="ajn-MO-7tU" customClass="FirstTankaViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wzw-Hr-Wvt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y76-bb-7ar">
-                                <rect key="frame" x="45" y="131" width="325" height="178"/>
+                                <rect key="frame" x="25" y="129" width="325" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5U-CB-ZVQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <items>
-                                    <navigationItem title="第1句を詠む" id="suB-gb-1Fy">
-                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="eK1-aQ-uYM">
-                                            <connections>
-                                                <action selector="tapToBack:" destination="ajn-MO-7tU" id="0fP-Aq-Vvm"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="次へ" id="nRh-gp-3vM">
-                                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="oSV-hA-xiR" kind="presentation" identifier="toNextView" modalPresentationStyle="fullScreen" id="3Vu-9a-9cX"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3Fk-ZQ-Auy"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="4Hn-o6-1os">
+                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="hEy-ib-bLV">
+                            <color key="tintColor" name="warmGrey"/>
+                            <connections>
+                                <action selector="tapToBack:" destination="ajn-MO-7tU" id="AxG-71-yib"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="次へ" id="MX6-wL-BX3">
+                            <color key="tintColor" name="tomato"/>
+                            <connections>
+                                <segue destination="oSV-hA-xiR" kind="show" identifier="toNextView" id="w9X-DE-crU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="backButton" destination="eK1-aQ-uYM" id="IW2-Zy-FMo"/>
                         <outlet property="textView" destination="y76-bb-7ar" id="58K-Wh-ega"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aco-mm-QZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.73913043478262" y="173.4375"/>
+            <point key="canvasLocation" x="2742.0289855072465" y="173.4375"/>
         </scene>
-        <!--Detail Tanka View Controller-->
+        <!--第一句を詠む-->
         <scene sceneID="WD6-i1-ZT5">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="oSV-hA-xiR" customClass="DetailTankaViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="chf-g1-8cF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gQW-JT-JsI">
-                                <rect key="frame" x="0.0" y="116" width="414" height="363"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQW-JT-JsI">
+                                <rect key="frame" x="0.0" y="116.00000000000003" width="375" height="361.66666666666674"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEa-yK-Ibh">
-                                        <rect key="frame" x="8" y="50" width="398" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEa-yK-Ibh">
+                                        <rect key="frame" x="31" y="37" width="313" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="k77-LJ-eDc"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="wEa-yK-Ibh" firstAttribute="centerX" secondItem="gQW-JT-JsI" secondAttribute="centerX" id="CDn-1a-x8F"/>
+                                    <constraint firstItem="wEa-yK-Ibh" firstAttribute="leading" secondItem="gQW-JT-JsI" secondAttribute="leading" constant="31" id="U3z-Pd-yQt"/>
+                                    <constraint firstItem="wEa-yK-Ibh" firstAttribute="top" secondItem="gQW-JT-JsI" secondAttribute="top" constant="37" id="Wr4-f6-buq"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwE-m2-pl2">
-                                <rect key="frame" x="53" y="604" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwE-m2-pl2" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="78" y="646" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="h6N-0X-8uk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="あ"/>
+                                <state key="normal" title="あ">
+                                    <color key="titleColor" name="brownishGrey"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="warmGrey"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backgroundColorButton:" destination="oSV-hA-xiR" eventType="touchUpInside" id="2tI-y7-ylQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M29-JR-ePP">
-                                <rect key="frame" x="167" y="604" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M29-JR-ePP" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                <rect key="frame" x="221" y="646" width="80" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="あ"/>
+                                <state key="normal" title="あ">
+                                    <color key="titleColor" name="brownishGrey"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="warmGrey"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="textColorButton:" destination="oSV-hA-xiR" eventType="touchUpInside" id="Oew-3q-oYY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-QJ-lXQ">
-                                <rect key="frame" x="287" y="604" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="写真"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="背景色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Co-B3R">
-                                <rect key="frame" x="67" y="575" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背景色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Co-B3R">
+                                <rect key="frame" x="92" y="617.66666666666663" width="52" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="brownishGrey"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="文字色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-oY-sCV">
-                                <rect key="frame" x="181" y="575" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字色" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-oY-sCV">
+                                <rect key="frame" x="229" y="617.66666666666663" width="64" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="brownishGrey"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="写真" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vek-LH-vJL">
-                                <rect key="frame" x="310" y="575" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oaj-Ie-JWq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oaj-Ie-JWq">
+                                <rect key="frame" x="0.0" y="44" width="336" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <items>
@@ -266,152 +149,15 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="投稿" id="1lS-YB-QbV">
                                             <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="AQc-3f-zBg" kind="presentation" modalPresentationStyle="fullScreen" id="R6j-IR-WBG"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-qw-CU6">
-                                <rect key="frame" x="0.0" y="517" width="414" height="291"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-qw-CU6">
+                                <rect key="frame" x="0.0" y="485.66666666666663" width="375" height="298.66666666666663"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZs-F2-1VL" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="30" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="0">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange0:" destination="oSV-hA-xiR" eventType="touchUpInside" id="kdG-qr-jBF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKM-ZK-bRb" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="99" y="30" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="68">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange68:" destination="oSV-hA-xiR" eventType="touchUpInside" id="ICS-jP-dcC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pf-Ph-ZeT" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="188" y="30" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="102">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange102:" destination="oSV-hA-xiR" eventType="touchUpInside" id="M5D-Pr-wYf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-kg-39p" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="279" y="30" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="136">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange136:" destination="oSV-hA-xiR" eventType="touchUpInside" id="hqK-uk-oCc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-dd-hXi" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="122" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="170">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange170:" destination="oSV-hA-xiR" eventType="touchUpInside" id="4G9-7x-nHK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwP-ZI-fyG" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="99" y="124" width="67" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="204">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange204:" destination="oSV-hA-xiR" eventType="touchUpInside" id="oxs-13-JV9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI1-1k-fz3" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="188" y="121" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="238">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange238:" destination="oSV-hA-xiR" eventType="touchUpInside" id="XlY-K9-9Wq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8G-hs-VN8" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="279" y="121" width="67" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="255"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="textColorChange255:" destination="oSV-hA-xiR" eventType="touchUpInside" id="7q4-Ed-8vm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjN-cJ-HrO">
-                                        <rect key="frame" x="231" y="220" width="100" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjN-cJ-HrO">
+                                        <rect key="frame" x="196" y="230.99999999999994" width="130" height="41.333333333333314"/>
                                         <state key="normal" title="完了">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -419,9 +165,11 @@
                                             <action selector="textColorChangeFinished:" destination="oSV-hA-xiR" eventType="touchUpInside" id="gSe-Jj-RWf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpU-OG-Hp5">
-                                        <rect key="frame" x="8" y="220" width="119" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpU-OG-Hp5">
+                                        <rect key="frame" x="48" y="230.99999999999994" width="130" height="41.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="esu-Gh-3Mo"/>
+                                        </constraints>
                                         <state key="normal" title="キャンセル">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -429,134 +177,196 @@
                                             <action selector="textColorChangeCancel:" destination="oSV-hA-xiR" eventType="touchUpInside" id="rza-mb-dVS"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="mjZ-Yj-GLo">
+                                        <rect key="frame" x="28" y="135.99999999999994" width="319" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-dd-hXi" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="EGh-a4-KQh"/>
+                                                    <constraint firstAttribute="height" constant="58" id="ddT-fR-2Xo"/>
+                                                </constraints>
+                                                <state key="normal" title="170">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange170:" destination="oSV-hA-xiR" eventType="touchUpInside" id="4G9-7x-nHK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwP-ZI-fyG" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="87" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="vBg-tY-qfR"/>
+                                                    <constraint firstAttribute="height" constant="58" id="wRq-hf-EL7"/>
+                                                </constraints>
+                                                <state key="normal" title="204">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange204:" destination="oSV-hA-xiR" eventType="touchUpInside" id="oxs-13-JV9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI1-1k-fz3" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="174" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="AP7-Al-WOX"/>
+                                                    <constraint firstAttribute="height" constant="58" id="WV6-TB-ZJM"/>
+                                                </constraints>
+                                                <state key="normal" title="238">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange238:" destination="oSV-hA-xiR" eventType="touchUpInside" id="XlY-K9-9Wq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8G-hs-VN8" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="cEO-TF-Lt8"/>
+                                                    <constraint firstAttribute="height" constant="58" id="cLA-o0-2e1"/>
+                                                </constraints>
+                                                <state key="normal" title="255"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange255:" destination="oSV-hA-xiR" eventType="touchUpInside" id="7q4-Ed-8vm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Ioh-mk-6ZG">
+                                        <rect key="frame" x="28" y="48.999999999999943" width="319" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZs-F2-1VL" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="Bqk-7X-1Em"/>
+                                                    <constraint firstAttribute="height" constant="58" id="e8P-2Y-DN7"/>
+                                                </constraints>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange0:" destination="oSV-hA-xiR" eventType="touchUpInside" id="kdG-qr-jBF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKM-ZK-bRb" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="87" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="PFl-EG-bYR"/>
+                                                    <constraint firstAttribute="width" constant="58" id="e1D-zs-Gh7"/>
+                                                </constraints>
+                                                <state key="normal" title="68">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange68:" destination="oSV-hA-xiR" eventType="touchUpInside" id="ICS-jP-dcC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pf-Ph-ZeT" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="174" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="aUO-eS-gD2"/>
+                                                    <constraint firstAttribute="width" constant="58" id="suX-bW-MMy"/>
+                                                </constraints>
+                                                <state key="normal" title="102">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange102:" destination="oSV-hA-xiR" eventType="touchUpInside" id="M5D-Pr-wYf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-kg-39p" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="4vD-u6-o7x"/>
+                                                    <constraint firstAttribute="width" constant="58" id="Cq3-kP-3sz"/>
+                                                </constraints>
+                                                <state key="normal" title="136">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textColorChange136:" destination="oSV-hA-xiR" eventType="touchUpInside" id="hqK-uk-oCc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mjN-cJ-HrO" secondAttribute="trailing" constant="49" id="0MW-hF-pjg"/>
+                                    <constraint firstItem="cpU-OG-Hp5" firstAttribute="top" secondItem="mjN-cJ-HrO" secondAttribute="top" id="8Eb-Vg-45V"/>
+                                    <constraint firstItem="cpU-OG-Hp5" firstAttribute="top" secondItem="mjZ-Yj-GLo" secondAttribute="bottom" constant="37" id="HVI-wP-Fi9"/>
+                                    <constraint firstItem="cpU-OG-Hp5" firstAttribute="leading" secondItem="2Lw-qw-CU6" secondAttribute="leading" constant="48" id="Vnu-yN-39y"/>
+                                    <constraint firstItem="cpU-OG-Hp5" firstAttribute="bottom" secondItem="2Lw-qw-CU6" secondAttribute="bottomMargin" constant="-12" id="YDP-ob-dld"/>
+                                    <constraint firstItem="mjZ-Yj-GLo" firstAttribute="top" secondItem="Ioh-mk-6ZG" secondAttribute="bottom" constant="29" id="aFj-c0-UpZ"/>
+                                    <constraint firstItem="Ioh-mk-6ZG" firstAttribute="centerX" secondItem="2Lw-qw-CU6" secondAttribute="centerX" id="kt9-wJ-gME"/>
+                                    <constraint firstItem="cpU-OG-Hp5" firstAttribute="baseline" secondItem="mjN-cJ-HrO" secondAttribute="firstBaseline" id="vxB-8B-qF3"/>
+                                    <constraint firstItem="mjN-cJ-HrO" firstAttribute="leading" secondItem="cpU-OG-Hp5" secondAttribute="trailing" constant="18" id="wKp-5b-kE9"/>
+                                    <constraint firstItem="Ioh-mk-6ZG" firstAttribute="top" secondItem="2Lw-qw-CU6" secondAttribute="top" constant="49" id="wbj-cN-omy"/>
+                                    <constraint firstItem="Ioh-mk-6ZG" firstAttribute="leading" secondItem="mjZ-Yj-GLo" secondAttribute="leading" id="xLg-uM-lsu"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgd-xf-YMS">
-                                <rect key="frame" x="0.0" y="517" width="414" height="335"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgd-xf-YMS">
+                                <rect key="frame" x="0.0" y="485.66666666666674" width="375" height="298.33333333333326"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-9Y-7MV" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="36" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorPaleSalmon:" destination="oSV-hA-xiR" eventType="touchUpInside" id="PdO-u2-CWi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKT-0P-QwO" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="123" y="36" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorPaleMauve:" destination="oSV-hA-xiR" eventType="touchUpInside" id="Nqh-AX-fX1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-BX-rby" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="199" y="38" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.87058823529411766" green="0.86274509803921573" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorPaleLilac:" destination="oSV-hA-xiR" eventType="touchUpInside" id="LSI-2K-NL8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNe-B1-hJ2" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="281" y="38" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorGreyishBrown:" destination="oSV-hA-xiR" eventType="touchUpInside" id="rza-Zd-J8k"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfs-hJ-gEc" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="138" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorCream:" destination="oSV-hA-xiR" eventType="touchUpInside" id="Rfs-Ux-vws"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34i-ih-aDQ" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="123" y="138" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.78823529411764703" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorLightSkyBlue:" destination="oSV-hA-xiR" eventType="touchUpInside" id="8l3-SK-y7Y"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ4-j5-pbF" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="199" y="138" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.87450980392156863" green="1" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorVeryLightGreen:" destination="oSV-hA-xiR" eventType="touchUpInside" id="g7F-d9-L01"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeE-E3-Ggp" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                        <rect key="frame" x="281" y="138" width="58" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="bgColorWhite:" destination="oSV-hA-xiR" eventType="touchUpInside" id="J6J-Vn-X5N"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBH-aZ-p0A">
-                                        <rect key="frame" x="49" y="218" width="140" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBH-aZ-p0A">
+                                        <rect key="frame" x="48" y="230.99999999999994" width="130" height="41.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="IIt-K9-BwJ"/>
+                                        </constraints>
                                         <state key="normal" title="キャンセル">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -564,9 +374,8 @@
                                             <action selector="bgColorChangeCancel:" destination="oSV-hA-xiR" eventType="touchUpInside" id="VGJ-9u-qec"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0af-3T-BUM">
-                                        <rect key="frame" x="199" y="218" width="140" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0af-3T-BUM">
+                                        <rect key="frame" x="196" y="230.99999999999994" width="130" height="41.333333333333314"/>
                                         <state key="normal" title="完了">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -574,14 +383,218 @@
                                             <action selector="bgColorChangeFinished:" destination="oSV-hA-xiR" eventType="touchUpInside" id="qlo-GT-5dF"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="YH9-pj-Jx3">
+                                        <rect key="frame" x="28" y="135.99999999999994" width="319" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfs-hJ-gEc" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="6iY-Ct-3uW"/>
+                                                    <constraint firstAttribute="height" constant="58" id="UCQ-x4-G0U"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorCream:" destination="oSV-hA-xiR" eventType="touchUpInside" id="Rfs-Ux-vws"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34i-ih-aDQ" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="87" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.78823529411764703" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="0k8-37-Tda"/>
+                                                    <constraint firstAttribute="width" constant="58" id="Jqv-bQ-3O6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorLightSkyBlue:" destination="oSV-hA-xiR" eventType="touchUpInside" id="8l3-SK-y7Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ4-j5-pbF" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="174" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.87450980392156863" green="1" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="VhI-Aj-gtm"/>
+                                                    <constraint firstAttribute="height" constant="58" id="xPk-P5-moC"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorVeryLightGreen:" destination="oSV-hA-xiR" eventType="touchUpInside" id="g7F-d9-L01"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeE-E3-Ggp" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="JrS-Nc-yII"/>
+                                                    <constraint firstAttribute="width" constant="58" id="urt-XR-Nvc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorWhite:" destination="oSV-hA-xiR" eventType="touchUpInside" id="J6J-Vn-X5N"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="n0w-mS-bwk">
+                                        <rect key="frame" x="28" y="48.999999999999943" width="319" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNe-B1-hJ2" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="4jg-Yb-vQR"/>
+                                                    <constraint firstAttribute="height" constant="58" id="LGe-9W-GUK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorGreyishBrown:" destination="oSV-hA-xiR" eventType="touchUpInside" id="rza-Zd-J8k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKT-0P-QwO" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="87" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="1" green="0.8784313725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="0ya-Nd-dAn"/>
+                                                    <constraint firstAttribute="width" constant="58" id="eQy-Oa-KiW"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorPaleMauve:" destination="oSV-hA-xiR" eventType="touchUpInside" id="Nqh-AX-fX1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-BX-rby" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="174" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="0.87058823529411766" green="0.86274509803921573" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="A5R-je-Gk7"/>
+                                                    <constraint firstAttribute="width" constant="58" id="TJk-6y-zF6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorPaleLilac:" destination="oSV-hA-xiR" eventType="touchUpInside" id="LSI-2K-NL8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-9Y-7MV" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="58" height="58"/>
+                                                <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="J97-hU-Lx1"/>
+                                                    <constraint firstAttribute="width" constant="58" id="nLI-Hg-c30"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bgColorPaleSalmon:" destination="oSV-hA-xiR" eventType="touchUpInside" id="PdO-u2-CWi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="CBH-aZ-p0A" firstAttribute="baseline" secondItem="0af-3T-BUM" secondAttribute="firstBaseline" id="9bb-53-9HK"/>
+                                    <constraint firstItem="YH9-pj-Jx3" firstAttribute="top" secondItem="n0w-mS-bwk" secondAttribute="bottom" constant="29" id="Atp-dg-DTp"/>
+                                    <constraint firstItem="n0w-mS-bwk" firstAttribute="centerX" secondItem="jgd-xf-YMS" secondAttribute="centerX" id="Eh7-M3-6DU"/>
+                                    <constraint firstItem="0af-3T-BUM" firstAttribute="leading" secondItem="CBH-aZ-p0A" secondAttribute="trailing" constant="18" id="Kxq-82-1Oj"/>
+                                    <constraint firstItem="CBH-aZ-p0A" firstAttribute="top" secondItem="YH9-pj-Jx3" secondAttribute="bottom" constant="37" id="M7T-P1-Uru"/>
+                                    <constraint firstItem="CBH-aZ-p0A" firstAttribute="leading" secondItem="jgd-xf-YMS" secondAttribute="leading" constant="48" id="S9f-Vn-6ej"/>
+                                    <constraint firstAttribute="trailing" secondItem="0af-3T-BUM" secondAttribute="trailing" constant="49" id="Wb2-yI-RNk"/>
+                                    <constraint firstItem="CBH-aZ-p0A" firstAttribute="top" secondItem="0af-3T-BUM" secondAttribute="top" id="Zf5-Vo-Lco"/>
+                                    <constraint firstItem="CBH-aZ-p0A" firstAttribute="bottom" secondItem="jgd-xf-YMS" secondAttribute="bottomMargin" constant="-12" id="fuw-BH-pyJ"/>
+                                    <constraint firstItem="n0w-mS-bwk" firstAttribute="leading" secondItem="YH9-pj-Jx3" secondAttribute="leading" id="qaC-uB-63c"/>
+                                    <constraint firstItem="n0w-mS-bwk" firstAttribute="top" secondItem="jgd-xf-YMS" secondAttribute="top" constant="49" id="viY-SE-FCT"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cd4-oY-sCV" firstAttribute="top" secondItem="gQW-JT-JsI" secondAttribute="bottom" constant="140" id="0YR-YW-W5Z"/>
+                            <constraint firstItem="jgd-xf-YMS" firstAttribute="top" secondItem="gQW-JT-JsI" secondAttribute="bottom" constant="8" id="62B-M5-ZXt"/>
+                            <constraint firstItem="gQW-JT-JsI" firstAttribute="leading" secondItem="zKP-Vz-ksF" secondAttribute="leading" id="B4k-wx-hEl"/>
+                            <constraint firstItem="FwE-m2-pl2" firstAttribute="baseline" secondItem="M29-JR-ePP" secondAttribute="firstBaseline" id="B8U-ao-KEL"/>
+                            <constraint firstItem="zKP-Vz-ksF" firstAttribute="bottom" secondItem="FwE-m2-pl2" secondAttribute="bottom" constant="52" id="Dw4-eW-b0K"/>
+                            <constraint firstItem="2Lw-qw-CU6" firstAttribute="top" secondItem="jgd-xf-YMS" secondAttribute="top" id="Gl6-j7-JzN"/>
+                            <constraint firstItem="M29-JR-ePP" firstAttribute="top" secondItem="cd4-oY-sCV" secondAttribute="bottom" constant="8" id="Ljb-Jr-Tcs"/>
+                            <constraint firstItem="FwE-m2-pl2" firstAttribute="top" secondItem="M29-JR-ePP" secondAttribute="top" id="MHv-Fy-fI4"/>
+                            <constraint firstItem="FwE-m2-pl2" firstAttribute="top" secondItem="M74-Co-B3R" secondAttribute="bottom" constant="8" id="Oqb-8P-YzI"/>
+                            <constraint firstItem="gQW-JT-JsI" firstAttribute="trailing" secondItem="2Lw-qw-CU6" secondAttribute="trailing" id="QfJ-9M-i1x"/>
+                            <constraint firstItem="gQW-JT-JsI" firstAttribute="centerX" secondItem="chf-g1-8cF" secondAttribute="centerX" id="Qfr-0L-lbY"/>
+                            <constraint firstItem="M74-Co-B3R" firstAttribute="centerX" secondItem="FwE-m2-pl2" secondAttribute="centerX" id="WsU-lu-vGp"/>
+                            <constraint firstItem="M29-JR-ePP" firstAttribute="leading" secondItem="FwE-m2-pl2" secondAttribute="trailing" constant="63" id="ZwZ-EL-5eH"/>
+                            <constraint firstItem="jgd-xf-YMS" firstAttribute="trailing" secondItem="2Lw-qw-CU6" secondAttribute="trailing" id="htc-0x-vew"/>
+                            <constraint firstItem="zKP-Vz-ksF" firstAttribute="trailing" secondItem="M29-JR-ePP" secondAttribute="trailing" constant="74" id="iy6-vb-JB0"/>
+                            <constraint firstItem="jgd-xf-YMS" firstAttribute="leading" secondItem="2Lw-qw-CU6" secondAttribute="leading" id="sD2-Io-TF7"/>
+                            <constraint firstItem="FwE-m2-pl2" firstAttribute="leading" secondItem="zKP-Vz-ksF" secondAttribute="leading" constant="78" id="sUA-sw-uaM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oaj-Ie-JWq" secondAttribute="trailing" constant="23" id="sVG-ro-YQG"/>
+                            <constraint firstItem="M74-Co-B3R" firstAttribute="leading" secondItem="zKP-Vz-ksF" secondAttribute="leading" constant="92" id="t0B-xe-0en"/>
+                            <constraint firstItem="2Lw-qw-CU6" firstAttribute="centerX" secondItem="cd4-oY-sCV" secondAttribute="centerX" constant="-73.5" id="u1G-GL-jaj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jgd-xf-YMS" secondAttribute="bottom" constant="-6" id="whP-Wk-LNh"/>
+                            <constraint firstItem="cd4-oY-sCV" firstAttribute="leading" secondItem="zKP-Vz-ksF" secondAttribute="leading" constant="229" id="yKy-qG-BDo"/>
+                            <constraint firstItem="2Lw-qw-CU6" firstAttribute="centerY" secondItem="FwE-m2-pl2" secondAttribute="centerY" constant="-51" id="yT2-vE-tXS"/>
+                            <constraint firstItem="gQW-JT-JsI" firstAttribute="leading" secondItem="2Lw-qw-CU6" secondAttribute="leading" id="ybK-pV-6be"/>
+                            <constraint firstItem="gQW-JT-JsI" firstAttribute="top" secondItem="Oaj-Ie-JWq" secondAttribute="bottom" constant="28" id="ybi-RV-HbT"/>
+                            <constraint firstItem="Oaj-Ie-JWq" firstAttribute="top" secondItem="chf-g1-8cF" secondAttribute="topMargin" constant="-44" id="yma-s9-axm"/>
+                            <constraint firstItem="Oaj-Ie-JWq" firstAttribute="leading" secondItem="gQW-JT-JsI" secondAttribute="leading" id="ziW-9d-t4G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zKP-Vz-ksF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Kdd-rh-yZG"/>
+                    <navigationItem key="navigationItem" title="第一句を詠む" id="Kdd-rh-yZG">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="2IN-RU-ygA">
+                            <color key="tintColor" name="brownishGrey"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="投稿" id="7CI-fq-3mF">
+                            <color key="tintColor" name="tomato"/>
+                            <connections>
+                                <segue destination="AQc-3f-zBg" kind="show" identifier="toPostView" id="c8Y-GB-T7g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="backgroundColorPaletteView" destination="jgd-xf-YMS" id="TRq-dQ-Ai9"/>
                         <outlet property="phrase1Label" destination="wEa-yK-Ibh" id="AnD-qk-Gvb"/>
@@ -591,18 +604,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Aj-Az-2Nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828.985507246377" y="173.4375"/>
+            <point key="canvasLocation" x="3648.8000000000002" y="172.90640394088672"/>
         </scene>
         <!--Select Tag View Controller-->
         <scene sceneID="gVK-sg-lmS">
             <objects>
                 <viewController id="UFM-8f-AU7" customClass="SelectTagViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BmD-F6-qeu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-hW-2dT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <items>
@@ -622,7 +635,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chr-Hr-XAH">
-                                <rect key="frame" x="71" y="299" width="46" height="42"/>
+                                <rect key="frame" x="71" y="299" width="41" height="36"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -630,7 +643,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7E-0J-JHx">
-                                <rect key="frame" x="0.0" y="130" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="130" width="375" height="40.666666666666657"/>
                                 <string key="text">伝えきれない想いをタグに乗せましょう
 同じ景色を見た人と想いを繋ぎやすくなります</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -656,56 +669,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMI-Iy-kkt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3639" y="173"/>
+            <point key="canvasLocation" x="5457.971014492754" y="172.76785714285714"/>
         </scene>
         <!--Beacon View Controller-->
         <scene sceneID="VuU-1y-9XS">
             <objects>
                 <viewController id="AQc-3f-zBg" customClass="BeaconViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4RV-go-GKs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hakodate_shiden" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-W1-VjF">
-                                <rect key="frame" x="75" y="193" width="264" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GeS-f7-kSv">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="4qz-6W-1RR">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Mwl-hg-WSN"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ビーコン検知中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-hI-ccu">
-                                <rect key="frame" x="48" y="415" width="319" height="198"/>
+                                <rect key="frame" x="28" y="424" width="319" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GeS-f7-kSv">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="4qz-6W-1RR">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Mwl-hg-WSN">
-                                            <connections>
-                                                <segue destination="UFM-8f-AU7" kind="presentation" modalPresentationStyle="fullScreen" id="t61-eu-Dxk"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hakodate_shiden" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-W1-VjF">
+                                <rect key="frame" x="61" y="189" width="264" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1SB-ZL-6f8"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZRa-Wx-kl0"/>
+                    <navigationItem key="navigationItem" id="ZRa-Wx-kl0">
+                        <barButtonItem key="rightBarButtonItem" title="投稿" id="BoA-lu-0fu">
+                            <color key="tintColor" name="tomato"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mis-DJ-kS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726.0869565217395" y="172.76785714285714"/>
+            <point key="canvasLocation" x="4544.8000000000002" y="172.16748768472908"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zUs-hH-e3L">
             <objects>
                 <viewController storyboardIdentifier="postedTanka" id="wq9-8X-iay" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Muo-m2-B3L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投稿完了！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-cc-fyV">
@@ -723,12 +736,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQd-W1-gpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4578" y="82"/>
+            <point key="canvasLocation" x="6397.1014492753629" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0hu-cU-Ruc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kIa-Zx-ZPI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kF1-2H-aKl">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ajn-MO-7tU" kind="relationship" relationship="rootViewController" id="kKS-F6-oK9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i29-RO-1eF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.8840579710147" y="173.4375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Tanka" width="25" height="25"/>
         <image name="hakodate_shiden" width="800" height="529"/>
-        <image name="summer" width="640" height="502"/>
+        <namedColor name="brownishGrey">
+            <color red="0.40799999237060547" green="0.40799999237060547" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tomato">
+            <color red="0.82700002193450928" green="0.2199999988079071" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="warmGrey">
+            <color red="0.43900001049041748" green="0.43900001049041748" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

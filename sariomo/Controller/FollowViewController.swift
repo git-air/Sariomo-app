@@ -13,6 +13,8 @@ class FollowViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private let refreshControl = UIRefreshControl()
+    
     var tankas: [Tankalist] = []
     
     var json: JSON = []
@@ -27,8 +29,26 @@ class FollowViewController: UIViewController {
         
         followTanka()
         
+        tableView.refreshControl = refreshControl
+        tableView.refreshControl?.addTarget(self, action:
+            #selector(handleRefreshControl),
+                                            for: .valueChanged)
+        
+        
         tableView.reloadData()
         
+    }
+    
+    @objc func handleRefreshControl() {
+        // Update your content…
+        
+        followTanka()
+        tableView.reloadData()
+        
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.tableView.refreshControl?.endRefreshing()
+        }
     }
     
     func followTanka() {
@@ -46,7 +66,7 @@ class FollowViewController: UIViewController {
         
         var a: [Tankalist] = []
         
-        for i in 0...3 {
+        for i in 0...2 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             

@@ -8,54 +8,41 @@
 
 import UIKit
 import SwiftyGif
-// import TGRFramework
 
 class BeaconViewController: UIViewController {
     
-    // var tgrClient: TGRClient?
-    let appId: String = "293"
-    let developerId: String = "89"
-    let serviceId: String = "1082454069"
-    let enableADID: Bool = true
-    let enableNotify: Bool = true
+    // public var postTanka: Tankalist!
     
-    var detectionBeaconView: DetectionBeaconView!
+    public var sectionId: Int = 5
+    public var iti: Int = 1
+    public var phrase: String = ""
+    public var user: Int = 0
+    public var date: String = "20191206"
+    public var background: String = ""
+    public var wordcolor: String = ""
     
-    var isFirstDetection = true
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView()
+        // postTanka()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.detectionBeaconView.doAnimation()
-        // startMonitor()
-    }
-    
-    func initView() {
-        self.detectionBeaconView = DetectionBeaconView.init(frame: self.view.frame)
-        self.view.addSubview(detectionBeaconView)
-    }
-    
-    func showDetectionBeaconView(_ bool: Bool) {
-        UIView.animate(withDuration: 0.6, animations: {
-            self.detectionBeaconView.alpha = bool ? 1 : 0
-        }, completion: { _ -> Void in
-            if !bool && self.isFirstDetection {
-                self.isFirstDetection = false
-            }
-            self.detectionBeaconView.animationBool = false
+    func postTanka() {
+        let parameter: [String: Any] = [
+            "sectionid": sectionId,
+            "where": iti,
+            "phrase": phrase,
+            "user": user,
+            "date": date,
+            "background": background,
+            "wordcolor": wordcolor
+        ]
+        let api = ApiManager(host: "***REMOVED***", path: "/addPhrase", method: .post, parameters: parameter)
+        api.request(success: {(data: Any) in
+            print("data: \(data)")
+        }, fail: {(error: Error?) in
+            print(error!)
         })
     }
-    
-    @IBAction func tapToBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
     
     
 }

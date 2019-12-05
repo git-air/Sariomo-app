@@ -14,6 +14,7 @@ class UnFinishedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private let refreshControl = UIRefreshControl()
     // var tankas: [Tanka] = []
     var tankaTes: [Tankalist] = []
     
@@ -31,8 +32,25 @@ class UnFinishedViewController: UIViewController {
         
         unFinishedTanka()
         
+        tableView.refreshControl = refreshControl
+        tableView.refreshControl?.addTarget(self, action:
+            #selector(handleRefreshControl),
+                                            for: .valueChanged)
+        
         tableView.reloadData()
         
+    }
+    
+    @objc func handleRefreshControl() {
+        // Update your content…
+        
+        unFinishedTanka()
+        tableView.reloadData()
+        
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.tableView.refreshControl?.endRefreshing()
+        }
     }
     
     
@@ -58,7 +76,7 @@ class UnFinishedViewController: UIViewController {
 //
 //        dispatchGroup.enter()
 //        dispatchQueue.async(group: dispatchGroup) {
-//            let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
+//            let api = ApiManager(host: "***REMOVED***", path: "/getuser", method: .post, parameters: parameter)
 //            api.request(success: {(data: Any) in
 //                aiu = JSON(data)
 //            }, fail: {(error: Error?) in

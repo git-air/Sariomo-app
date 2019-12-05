@@ -13,10 +13,13 @@ class FinishedViewController: UIViewController {
     
     @IBOutlet weak var finishedTableView: UITableView!
     
-    var tankas: [Tanka] = []
-    var tankaTes: [Tankalist] = []
+    private let refreshControl = UIRefreshControl()
+    
+    var tankas: [Tankalist] = []
     
     var json: JSON = []
+    
+    var users: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +29,32 @@ class FinishedViewController: UIViewController {
         
         FinishedTanka()
         
+        finishedTableView.refreshControl = refreshControl
+        finishedTableView.refreshControl?.addTarget(self, action:
+            #selector(handleRefreshControl),
+                                            for: .valueChanged)
+        
         finishedTableView.reloadData()
         
+    }
+    
+    @objc func handleRefreshControl() {
+        // Update your content…
+        
+        FinishedTanka()
+        finishedTableView.reloadData()
+        
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.finishedTableView.refreshControl?.endRefreshing()
+        }
     }
     
     func FinishedTanka() {
         let api = ApiManager(path: "/completeTL")
         api.request(success: {(data: Dictionary) in
             print("deta: \(data)")
-            self.tankaTes = self.a(data: data)
+            self.tankas = self.a(data: data)
             // self.json = JSON(data)
             
         }, fail: {(error: Error?) in
@@ -69,6 +89,15 @@ class FinishedViewController: UIViewController {
         return a
     }
     
+    @IBAction func toDetailTanka(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let second = storyboard.instantiateViewController(withIdentifier: "DetailFinishedTankaViewController") as! DetailFinishedTankaViewController
+        second.t = tankas[sender.tag]
+        self.present(second, animated: true, completion: nil)
+        print(tankas[0].phrase)
+        print("aaaaa")
+        print(sender.tag)
+    }
 }
 
 extension FinishedViewController: UITableViewDelegate {
@@ -90,7 +119,7 @@ extension FinishedViewController: UITableViewDelegate {
 extension FinishedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tankaTes.count
+        return tankas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -98,7 +127,8 @@ extension FinishedViewController: UITableViewDataSource {
         
         print("indexPath.row: \(indexPath.row)")
         
-        cell.fill(tanka: tankaTes[indexPath.row], a: indexPath.row)
+        cell.fill(tanka: tankas[indexPath.row], a: indexPath.row)
+        cell.detailButton.tag = indexPath.row
         
         
         

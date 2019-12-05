@@ -9,15 +9,19 @@
 import UIKit
 
 class FirstTankaViewController: UIViewController {
-
-    @IBOutlet weak var backButton: UIBarButtonItem!
     
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [
+            .foregroundColor: MyColor.brownishGrey
+        ]
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController!.navigationBar.topItem?.title = "第一句を詠む"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,7 +30,6 @@ class FirstTankaViewController: UIViewController {
             nextView.argString = textView.text!
         }
     }
-    
     
     @IBAction func tapToBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
