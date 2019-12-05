@@ -64,12 +64,13 @@ class FinishedViewController: UIViewController {
     
     func a(data: Dictionary<String, Any>) -> [Tankalist] {
         let json = JSON(data)
+        let count = json["tankalist"].count
         print(json)
         
         var a: [Tankalist] = []
         print("json: \(json)")
         
-        for i in 0...1 {
+        for i in 0...count-1 {
             let tankaid: Int = json["tankalist"][i]["tankaid"].int!
             print(tankaid)
             
