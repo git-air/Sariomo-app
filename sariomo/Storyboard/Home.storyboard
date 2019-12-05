@@ -190,41 +190,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAR-Jf-ork">
-                                <rect key="frame" x="41" y="474" width="292" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" name="warmGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaK-31-EvC">
-                                <rect key="frame" x="41" y="522" width="292" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" name="warmGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT2-AT-7VD">
-                                <rect key="frame" x="41" y="570" width="292" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" name="warmGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-Ot-q4C">
-                                <rect key="frame" x="41" y="618" width="292" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" name="warmGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy2-si-B9t">
-                                <rect key="frame" x="41" y="666" width="292" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" name="warmGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-5v-k4q">
                                 <rect key="frame" x="41" y="119" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -262,15 +227,10 @@
                     <navigationItem key="navigationItem" id="3mw-gK-yO3"/>
                     <connections>
                         <outlet property="navigationBar" destination="8eF-5R-NOQ" id="Qj7-CR-MpG"/>
-                        <outlet property="phrase1Label" destination="MAR-Jf-ork" id="4xk-Kk-DMm"/>
                         <outlet property="phrase1TextField" destination="KEP-5v-k4q" id="Ikr-kr-v3y"/>
-                        <outlet property="phrase2Label" destination="SaK-31-EvC" id="JF2-6g-uUf"/>
                         <outlet property="phrase2TextField" destination="cc1-w4-gmI" id="4oR-G2-GRH"/>
-                        <outlet property="phrase3Label" destination="fT2-AT-7VD" id="Dar-3v-U5W"/>
                         <outlet property="phrase3TextField" destination="jO0-yG-oFe" id="PLH-Co-j7k"/>
-                        <outlet property="phrase4Label" destination="OFR-Ot-q4C" id="5HU-b5-O4u"/>
                         <outlet property="phrase4TextField" destination="a95-Hh-iYB" id="6Hy-3i-f3a"/>
-                        <outlet property="phrase5Label" destination="wy2-si-B9t" id="vLo-rJ-biy"/>
                         <outlet property="phrase5TextField" destination="c9t-2Y-O0F" id="i4I-Mx-N4Q"/>
                         <outlet property="postTankaButton" destination="G86-Ce-xbU" id="pQ3-J5-2rp"/>
                     </connections>
@@ -476,7 +436,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shiden2" translatesAutoresizingMaskIntoConstraints="NO" id="99u-Qd-YNb">
                                                     <rect key="frame" x="0.0" y="40" width="375" height="334"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="99u-Qd-YNb" secondAttribute="height" multiplier="1:1" id="wOa-fz-YZQ"/>
+                                                        <constraint firstAttribute="width" secondItem="99u-Qd-YNb" secondAttribute="height" multiplier="1:1" constant="41" id="wOa-fz-YZQ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKl-eP-hQP">
@@ -491,15 +451,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanka" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-dG-2fY">
+                                                    <rect key="frame" x="70" y="76" width="274" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnN-sb-e4d" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
-                                                    <rect key="frame" x="75" y="515" width="225" height="30"/>
+                                                    <rect key="frame" x="40" y="515" width="127" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Detail">
-                                                        <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" name="tomato"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" name="tomato"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                             <real key="value" value="1"/>
@@ -512,16 +479,30 @@
                                                         <action selector="test:" destination="how-QQ-wvn" eventType="touchUpInside" id="4pE-bg-H0z"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanka" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-dG-2fY">
-                                                    <rect key="frame" x="70" y="76" width="274" height="262"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNE-cg-B0s" customClass="CustomButton" customModule="sariomo" customModuleProvider="target">
+                                                    <rect key="frame" x="207" y="515" width="127" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <state key="normal" title="続きを詠む">
+                                                        <color key="titleColor" name="tomato"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="tomato"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="7"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="readContinuationUnfinishedTanka:" destination="how-QQ-wvn" eventType="touchUpInside" id="sMc-aY-bt4"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="XnN-sb-e4d" secondAttribute="trailing" constant="60" id="8gH-3K-O0R"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XnN-sb-e4d" secondAttribute="trailing" constant="193" id="8gH-3K-O0R"/>
                                                 <constraint firstAttribute="centerY" secondItem="99u-Qd-YNb" secondAttribute="centerY" constant="115.5" id="9kr-yk-Qt3"/>
                                                 <constraint firstItem="cKl-eP-hQP" firstAttribute="top" secondItem="99u-Qd-YNb" secondAttribute="bottom" constant="60" id="AeA-PX-0Cg"/>
                                                 <constraint firstItem="ThX-Oq-Vrt" firstAttribute="centerX" secondItem="dKp-eM-3CC" secondAttribute="centerX" constant="30" id="BNj-WW-588"/>
@@ -529,7 +510,7 @@
                                                 <constraint firstItem="99u-Qd-YNb" firstAttribute="leading" secondItem="dKp-eM-3CC" secondAttribute="leading" id="MLg-Qv-cP6"/>
                                                 <constraint firstItem="cKl-eP-hQP" firstAttribute="leading" secondItem="dKp-eM-3CC" secondAttribute="leadingMargin" constant="30" id="NeI-gb-Z4i"/>
                                                 <constraint firstAttribute="centerX" secondItem="99u-Qd-YNb" secondAttribute="centerX" id="Tbe-RB-wRU"/>
-                                                <constraint firstItem="XnN-sb-e4d" firstAttribute="leading" secondItem="dKp-eM-3CC" secondAttribute="leadingMargin" constant="60" id="cQY-dL-hmC"/>
+                                                <constraint firstItem="XnN-sb-e4d" firstAttribute="leading" secondItem="dKp-eM-3CC" secondAttribute="leadingMargin" constant="25" id="cQY-dL-hmC"/>
                                                 <constraint firstItem="ThX-Oq-Vrt" firstAttribute="top" secondItem="99u-Qd-YNb" secondAttribute="bottom" constant="60" id="e8W-xN-bvn"/>
                                                 <constraint firstAttribute="trailing" secondItem="99u-Qd-YNb" secondAttribute="trailing" id="iMo-gC-Nt4"/>
                                                 <constraint firstItem="99u-Qd-YNb" firstAttribute="top" secondItem="dKp-eM-3CC" secondAttribute="top" constant="40" id="rEL-Fi-ARs"/>
@@ -539,6 +520,7 @@
                                             <outlet property="dateLabel" destination="cKl-eP-hQP" id="DJ9-ro-mZr"/>
                                             <outlet property="detailButton" destination="XnN-sb-e4d" id="2VG-cM-G8S"/>
                                             <outlet property="photoImageView" destination="99u-Qd-YNb" id="tg9-Az-r20"/>
+                                            <outlet property="readContinueButton" destination="RNE-cg-B0s" id="h3e-Qz-arl"/>
                                             <outlet property="tankaLabel" destination="gVa-dG-2fY" id="NDC-4f-7Uu"/>
                                             <outlet property="userLabel" destination="ThX-Oq-Vrt" id="8Cl-CD-eCN"/>
                                         </connections>
@@ -561,7 +543,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIz-7r-mFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1127.536231884058" y="178.79464285714286"/>
+            <point key="canvasLocation" x="1127.2" y="178.07881773399015"/>
+        </scene>
+        <!--Read Continuation Un Finished Tanka View Controller-->
+        <scene sceneID="psm-nL-kRt">
+            <objects>
+                <viewController storyboardIdentifier="ReadContinuationUnFinishedTankaViewController" id="Arx-aW-BfT" customClass="ReadContinuationUnFinishedTankaViewController" customModule="sariomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AF1-4r-inW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-v7-MbE">
+                                <rect key="frame" x="41" y="396" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKb-Qv-9uH">
+                                <rect key="frame" x="41" y="150" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O7H-f1-Ml3">
+                                <rect key="frame" x="41" y="458" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Eu-C9-id8">
+                                <rect key="frame" x="41" y="246" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXA-Fs-qXj">
+                                <rect key="frame" x="41" y="321" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-c7-Ugq">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="続きを詠む" id="1OD-g7-SrK">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="Ehk-yu-KZb">
+                                            <color key="tintColor" name="warmGrey"/>
+                                            <connections>
+                                                <action selector="back:" destination="Arx-aW-BfT" id="aV7-lZ-S4e"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="kU6-wK-nbl">
+                                            <color key="tintColor" name="tomato"/>
+                                            <connections>
+                                                <action selector="postContinueTanka:" destination="Arx-aW-BfT" id="fPg-gV-MnU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sD0-cq-l72"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="eiy-c7-Ugq" id="g3Y-Zu-455"/>
+                        <outlet property="phrase1TextField" destination="uKb-Qv-9uH" id="pJs-V3-hTT"/>
+                        <outlet property="phrase2TextField" destination="3Eu-C9-id8" id="2fX-SB-C1I"/>
+                        <outlet property="phrase3TextField" destination="fXA-Fs-qXj" id="PfM-9h-wqB"/>
+                        <outlet property="phrase4TextField" destination="6pM-v7-MbE" id="9fn-YG-7FK"/>
+                        <outlet property="phrase5TextField" destination="O7H-f1-Ml3" id="voC-mh-GqQ"/>
+                        <outlet property="postTankaButton" destination="kU6-wK-nbl" id="rFW-3g-7LZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mu9-f3-ReO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="179"/>
         </scene>
         <!--Detail Tanka Show View Controller-->
         <scene sceneID="pf1-Er-wJU">
@@ -701,7 +760,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeY-5N-reM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407.2463768115945" y="178.79464285714286"/>
+            <point key="canvasLocation" x="3090" y="178"/>
         </scene>
         <!--finished-->
         <scene sceneID="JOd-lk-yqJ">

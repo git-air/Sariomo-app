@@ -132,6 +132,14 @@ class UnFinishedViewController: UIViewController {
         print(sender.tag)
     }
     
+    @IBAction func readContinuationUnfinishedTanka(_ sender: UIButton) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let next = storyboard.instantiateViewController(withIdentifier: "ReadContinuationUnFinishedTankaViewController") as! ReadContinuationUnFinishedTankaViewController
+        next.t = tankaTes[sender.tag]
+        self.present(next, animated:  true, completion: nil)
+    }
+    
+    
     
 }
 
@@ -170,6 +178,7 @@ extension UnFinishedViewController: UITableViewDataSource {
         
         
         cell.detailButton.tag = indexPath.row
+        cell.readContinueButton.tag = indexPath.row
         
         
         

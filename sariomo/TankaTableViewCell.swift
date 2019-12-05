@@ -19,6 +19,8 @@ class TankaTableViewCell: UITableViewCell {
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var detailButton: UIButton!
     
+    @IBOutlet weak var readContinueButton: UIButton!
+    
     var json:JSON = []
     
     func fill(tanka: Tankalist, a: Int) {

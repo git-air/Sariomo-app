@@ -1,15 +1,15 @@
 //
-//  readContinuationFollowTankaViewController.swift
+//  ReadContinuationUnFinishedTankaViewController.swift
 //  sariomo
 //
-//  Created by AIRU ISHIKURA on 2019/12/05.
+//  Created by AIRU ISHIKURA on 2019/12/06.
 //  Copyright © 2019 AIRU ISHIKURA. All rights reserved.
 //
 
 import UIKit
 
-class ReadContinuationFollowTankaViewController: UIViewController {
-    
+class ReadContinuationUnFinishedTankaViewController: UIViewController {
+
     var t: Tankalist!
     
     var empty = 1
@@ -32,19 +32,7 @@ class ReadContinuationFollowTankaViewController: UIViewController {
         navigationBar.titleTextAttributes = [
             .foregroundColor: MyColor.brownishGrey
         ]
-        
-//        phrase1Label.text = t.phrase["1"]
-//        phrase2Label.text = t.phrase["2"]
-//        phrase3Label.text = t.phrase["3"]
-//        phrase4Label.text = t.phrase["4"]
-//        phrase5Label.text = t.phrase["5"]
-        
-        //        text(textField: phrase1TextField, phrase: t.phrase["1"]!)
-        //        text(textField: phrase2TextField, phrase: t.phrase["2"]!)
-        //        text(textField: phrase3TextField, phrase: t.phrase["3"]!)
-        //        text(textField: phrase4TextField, phrase: t.phrase["4"]!)
-        //        text(textField: phrase5TextField, phrase: t.phrase["5"]!)
-        
+
         tf.append(phrase1TextField)
         tf.append(phrase2TextField)
         tf.append(phrase3TextField)
@@ -57,7 +45,6 @@ class ReadContinuationFollowTankaViewController: UIViewController {
         
         emptyCheck()
         aaa(tanka: t)
-        
     }
     
     @objc public func changeNotifyTextField (sender: NSNotification) {
@@ -140,7 +127,5 @@ class ReadContinuationFollowTankaViewController: UIViewController {
         postTanka(phrase: phrase)
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-}
 
+}
