@@ -135,6 +135,7 @@
                                             <outlet property="dateLabel" destination="oYm-uS-x68" id="R25-ht-rTW"/>
                                             <outlet property="detailButton" destination="8zb-Gw-tk0" id="cR7-h3-Qae"/>
                                             <outlet property="photoImageView" destination="4Ol-aD-ePz" id="8G9-zR-esZ"/>
+                                            <outlet property="readContinueButton" destination="EOJ-i0-bGr" id="pOc-qT-5iw"/>
                                             <outlet property="tankaLabel" destination="1Vx-SW-2Vg" id="BbT-eA-hND"/>
                                             <outlet property="userLabel" destination="sns-Bp-Gec" id="LwY-BP-3Dm"/>
                                         </connections>
@@ -176,13 +177,84 @@
                                     <navigationItem title="続きを詠む" id="JQN-rP-S1R">
                                         <barButtonItem key="leftBarButtonItem" title="戻る" id="oUi-U1-Ybm">
                                             <color key="tintColor" name="warmGrey"/>
+                                            <connections>
+                                                <action selector="back:" destination="42Y-IC-fqe" id="KrT-4g-Jd3"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="投稿" id="G86-Ce-xbU">
                                             <color key="tintColor" name="tomato"/>
+                                            <connections>
+                                                <action selector="postContinueTanka:" destination="42Y-IC-fqe" id="O28-q9-eGb"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAR-Jf-ork">
+                                <rect key="frame" x="41" y="474" width="292" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaK-31-EvC">
+                                <rect key="frame" x="41" y="522" width="292" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT2-AT-7VD">
+                                <rect key="frame" x="41" y="570" width="292" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-Ot-q4C">
+                                <rect key="frame" x="41" y="618" width="292" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy2-si-B9t">
+                                <rect key="frame" x="41" y="666" width="292" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-5v-k4q">
+                                <rect key="frame" x="41" y="119" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jO0-yG-oFe">
+                                <rect key="frame" x="41" y="219" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a95-Hh-iYB">
+                                <rect key="frame" x="41" y="279" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-2Y-O0F">
+                                <rect key="frame" x="41" y="348" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cc1-w4-gmI">
+                                <rect key="frame" x="41" y="175" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sMm-Eo-Xgj"/>
@@ -190,11 +262,22 @@
                     <navigationItem key="navigationItem" id="3mw-gK-yO3"/>
                     <connections>
                         <outlet property="navigationBar" destination="8eF-5R-NOQ" id="Qj7-CR-MpG"/>
+                        <outlet property="phrase1Label" destination="MAR-Jf-ork" id="4xk-Kk-DMm"/>
+                        <outlet property="phrase1TextField" destination="KEP-5v-k4q" id="Ikr-kr-v3y"/>
+                        <outlet property="phrase2Label" destination="SaK-31-EvC" id="JF2-6g-uUf"/>
+                        <outlet property="phrase2TextField" destination="cc1-w4-gmI" id="4oR-G2-GRH"/>
+                        <outlet property="phrase3Label" destination="fT2-AT-7VD" id="Dar-3v-U5W"/>
+                        <outlet property="phrase3TextField" destination="jO0-yG-oFe" id="PLH-Co-j7k"/>
+                        <outlet property="phrase4Label" destination="OFR-Ot-q4C" id="5HU-b5-O4u"/>
+                        <outlet property="phrase4TextField" destination="a95-Hh-iYB" id="6Hy-3i-f3a"/>
+                        <outlet property="phrase5Label" destination="wy2-si-B9t" id="vLo-rJ-biy"/>
+                        <outlet property="phrase5TextField" destination="c9t-2Y-O0F" id="i4I-Mx-N4Q"/>
+                        <outlet property="postTankaButton" destination="G86-Ce-xbU" id="pQ3-J5-2rp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gF-jM-Z2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="-564"/>
+            <point key="canvasLocation" x="2004" y="-564.53201970443354"/>
         </scene>
         <!--Detail Follow Tanka View Controller-->
         <scene sceneID="cDh-bi-E7N">

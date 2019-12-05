@@ -20,6 +20,8 @@ class FollowTankaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var detailButton: UIButton!
     
+    @IBOutlet weak var readContinueButton: UIButton!
+    
     var json: JSON = []
     
     func fill(tanka: Tankalist, a: Int) {

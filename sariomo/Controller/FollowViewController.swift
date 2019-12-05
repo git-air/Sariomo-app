@@ -136,6 +136,7 @@ extension FollowViewController: UITableViewDataSource {
         
         cell.fill(tanka: self.tankas[indexPath.row], a: indexPath.row)
         cell.detailButton.tag = indexPath.row
+        cell.readContinueButton.tag = indexPath.row
         
         return cell
     }
