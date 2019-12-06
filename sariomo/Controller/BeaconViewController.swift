@@ -44,6 +44,11 @@ class BeaconViewController: UIViewController {
         })
     }
     
+    @IBAction func toukouButton(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    
     
 }
 

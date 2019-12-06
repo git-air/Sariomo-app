@@ -706,6 +706,9 @@
                     <navigationItem key="navigationItem" id="ZRa-Wx-kl0">
                         <barButtonItem key="rightBarButtonItem" title="投稿" id="BoA-lu-0fu">
                             <color key="tintColor" name="tomato"/>
+                            <connections>
+                                <action selector="toukouButton:" destination="AQc-3f-zBg" id="fsU-CT-iMt"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
