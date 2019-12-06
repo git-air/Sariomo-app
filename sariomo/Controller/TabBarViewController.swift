@@ -16,6 +16,10 @@ class TabBarViewController: UITabBarController {
         delegate = self
 
         UITabBar.appearance().tintColor = MyColor.tomato
+//        UITabBar.items![2].image = UIImage(named: "Tanka")!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+//
+//        //こっちもレンダリングモードを指定。
+//        UITabBar.items![2].selectedImage = UIImage(named: "Tanka")!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
     }
 
 }
