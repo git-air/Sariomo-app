@@ -41,7 +41,7 @@ class MyPageViewController: UIViewController {
         let parameter = [
             "userid": 5
         ]
-        let api = ApiManager(host: "***REMOVED***", path: "/getmytanka", method: .post, parameters: parameter)
+        let api = ApiManager(host: "", path: "/getmytanka", method: .post, parameters: parameter)
         api.request(success: {(data: Dictionary) in
             self.tankas = self.a(data: data)
         }, fail: {(error: Error?) in

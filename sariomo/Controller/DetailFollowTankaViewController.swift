@@ -122,7 +122,7 @@ class DetailFollowTankaViewController: UIViewController {
         let parameter = [
             "userid": userid
         ]
-        let api = ApiManager(host: "***REMOVED***", path: "/getuser", method: .post, parameters: parameter)
+        let api = ApiManager(host: "", path: "/getuser", method: .post, parameters: parameter)
         api.request(success: {(data: Dictionary<String, Any>) in
             let json = JSON(data)
             DispatchQueue.main.async {

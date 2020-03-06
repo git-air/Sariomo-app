@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-// private let host = "***REMOVED***"
+// private let host = ""
 
 struct ApiManager {
     let host: String
@@ -17,7 +17,7 @@ struct ApiManager {
     let method: HTTPMethod
     let parameters: Parameters
     
-    init(host: String = "***REMOVED***", path: String, method: HTTPMethod = .get, parameters: Parameters = [:]) {
+    init(host: String = "", path: String, method: HTTPMethod = .get, parameters: Parameters = [:]) {
         self.method = method
         self.parameters = parameters
         self.host = host
