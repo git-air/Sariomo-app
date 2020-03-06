@@ -76,7 +76,7 @@ class UnFinishedViewController: UIViewController {
 //
 //        dispatchGroup.enter()
 //        dispatchQueue.async(group: dispatchGroup) {
-//            let api = ApiManager(host: "***REMOVED***", path: "/getuser", method: .post, parameters: parameter)
+//            let api = ApiManager(host: "", path: "/getuser", method: .post, parameters: parameter)
 //            api.request(success: {(data: Any) in
 //                aiu = JSON(data)
 //            }, fail: {(error: Error?) in
