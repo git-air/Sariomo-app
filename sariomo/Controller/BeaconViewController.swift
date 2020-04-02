@@ -36,7 +36,7 @@ class BeaconViewController: UIViewController {
             "background": background,
             "wordcolor": wordcolor
         ]
-        let api = ApiManager(host: "***REMOVED***", path: "/addPhrase", method: .post, parameters: parameter)
+        let api = ApiManager(host: "", path: "/addPhrase", method: .post, parameters: parameter)
         api.request(success: {(data: Any) in
             print("data: \(data)")
         }, fail: {(error: Error?) in
