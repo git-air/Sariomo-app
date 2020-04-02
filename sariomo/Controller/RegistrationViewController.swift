@@ -41,7 +41,7 @@ class RegistrationViewController: UIViewController {
         let parameter = [
             "username": name
         ]
-        let api = ApiManager(host: "***REMOVED***", path: "/adduser", method: .post, parameters: parameter)
+        let api = ApiManager(host: "", path: "/adduser", method: .post, parameters: parameter)
         
         api.request(success: {(data:Any) in
             print("Registration: \(data)")

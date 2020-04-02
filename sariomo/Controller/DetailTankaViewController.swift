@@ -113,7 +113,7 @@ class DetailTankaViewController: UIViewController {
 //            "background": "FFFFFF",
 //            "wordcolor": "000000"
 //        ]
-//        let api = ApiManager(host: "***REMOVED***", path: "/addPhrase", method: .post, parameters: parameter)
+//        let api = ApiManager(host: "", path: "/addPhrase", method: .post, parameters: parameter)
 //        
 //        api.request(success: {(data:Any) in
 //            print("success")
