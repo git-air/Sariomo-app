@@ -91,7 +91,7 @@ class DetailTankaShowViewController: UIViewController {
         ]
         var json: JSON!
         // var json: JSON!
-        let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
+        let api = ApiManager(host: "", path: "/getuser", method: .post, parameters: parameter)
         print("aaaaaaaaaaaaaaaaaaaa")
         api.request(success: {(data: Any) in
             print("aiueo: \(data)")

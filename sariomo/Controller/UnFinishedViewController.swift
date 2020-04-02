@@ -60,7 +60,7 @@ class UnFinishedViewController: UIViewController {
         var username = ""
         dispatchGroup.enter()
         dispatchQueue.async(group: dispatchGroup) {
-            let api = ApiManager(host: "http://34.85.89:8080", path: "/getuser", method: .post, parameters: parameter)
+            let api = ApiManager(host: "", path: "/getuser", method: .post, parameters: parameter)
             api.request(success: {(data: Any) in
                 aiu = JSON(data)
             }, fail: {(error: Error?) in
